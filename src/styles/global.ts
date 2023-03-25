@@ -9,13 +9,31 @@ export const GlobalStyle = createGlobalStyle`
     :focus{
         outline: 0;
     }
-    body {
-        
+    h1{
+      font-size: 3rem;
+      font-weight: 700;
     }
-    button: {
+    h2{
+        font-size: 2rem;
+        font-weight: 700;
+    }
+    h3{
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+    h4{
+        font-size: 1.25rem;
+        font-weight: 400;
+    }
+    h5{
+        font-size: 1rem;
+        font-weight: 400;
+    }
+    body{
+        background-color: #fdfdfd;
+        font-family: Inter, sans-serif;
+    }
+    button{
         cursor: pointer;
-    }
-    body, button {
-        font-family: 'Inter', sans-serif;
     }
 `
