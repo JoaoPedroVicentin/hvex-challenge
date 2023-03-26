@@ -2,15 +2,28 @@ import styled from 'styled-components'
 import * as DropdownMenu from '@radix-ui/react-dropdown-menu'
 
 export const HeaderContainer = styled.header`
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 6rem;
+
+  position: fixed;
+  z-index: 10;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   background-color: #252835;
-  padding: 1rem 5rem;
+  padding: 0 5rem;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
   nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0 auto;
+
+    width: 100%;
     max-width: 1440px;
 
     ul {
@@ -78,13 +91,14 @@ export const IconButton = styled.button`
 `
 export const DropdownMenuContent = styled(DropdownMenu.Content)`
   display: none;
+  z-index: 10;
 
   background-color: #252835;
   margin-top: 1.4rem;
   color: ${(props) => props.theme.white};
-  padding: 2rem;
+  padding: 1.25rem 1rem 2rem;
   border: 1px solid ${(props) => props.theme.grayDark};
-  width: 15rem;
+  width: 13rem;
   flex-direction: column;
   align-items: center;
   justify-content: center;

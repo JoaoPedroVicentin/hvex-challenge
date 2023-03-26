@@ -1,5 +1,10 @@
+import { HeroSection } from '../../components/heroSection'
 import { HomeContainer } from './styles'
 
 export default function Home() {
-  return <HomeContainer></HomeContainer>
+  return (
+    <HomeContainer>
+      <HeroSection />
+    </HomeContainer>
+  )
 }

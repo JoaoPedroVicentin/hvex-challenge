@@ -17,23 +17,21 @@ export function Header() {
     <HeaderContainer>
       <nav>
         <a>
-          <Image src={logo} width={115} alt="" />
+          <Image src={logo} width={115} alt="Logo Hvex" />
         </a>
 
         <ul>
           <li>
-            <NavigationButton href="/">Omni trafo</NavigationButton>
+            <NavigationButton>Omni trafo</NavigationButton>
           </li>
           <li>
-            <NavigationButton href="/">Sinalizador de faltas</NavigationButton>
+            <NavigationButton>Sinalizador de faltas</NavigationButton>
           </li>
           <li>
-            <NavigationButton href="/">Acoplador DP</NavigationButton>
+            <NavigationButton>Acoplador DP</NavigationButton>
           </li>
           <li>
-            <NavigationButtonPurchase href="/">
-              Comprar agora
-            </NavigationButtonPurchase>
+            <NavigationButtonPurchase>Comprar agora</NavigationButtonPurchase>
           </li>
         </ul>
 

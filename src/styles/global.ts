@@ -33,7 +33,7 @@ export const GlobalStyle = createGlobalStyle`
         background-color: #fdfdfd;
         font-family: Inter, sans-serif;
     }
-    button{
+    button, a{
         cursor: pointer;
     }
 `
