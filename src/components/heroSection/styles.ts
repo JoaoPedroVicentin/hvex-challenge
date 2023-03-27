@@ -42,7 +42,7 @@ export const InfosColumn = styled.div`
   justify-content: center;
   flex-direction: column;
   gap: 2rem;
-  margin-right: -5vw;
+  margin-right: -15%;
 
   a {
     width: 15rem;
@@ -92,19 +92,16 @@ export const ImageColumn = styled.div`
   align-items: center;
   justify-content: center;
 
-  margin: -2rem 0;
-
   img {
-    width: 100%;
-    height: auto;
+    @media (min-width: 975px) {
+      height: calc(100vh - 4rem);
+      width: auto;
+      max-height: 935px;
+    }
 
     @media (max-width: 975px) {
       width: 50%;
-      margin: 0;
+      height: auto;
     }
-  }
-
-  @media (max-width: 975px) {
-    margin: 0;
   }
 `
