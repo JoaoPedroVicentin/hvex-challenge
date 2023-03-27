@@ -18,7 +18,7 @@ export function SmartEnergySection() {
         <ImageColumn>
           <Image
             src={inteligentEnergy}
-            height={700}
+            quality={100}
             alt="Ilustrations about inteligent energy"
           />
         </ImageColumn>

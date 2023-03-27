@@ -22,13 +22,7 @@ export function HeroSection() {
           <Link href="">Quero mais informações</Link>
         </InfosColumn>
         <ImageColumn>
-          <Image
-            src={omniTrafo}
-            height={750}
-            quality={100}
-            priority
-            alt="Omni Trafo"
-          />
+          <Image src={omniTrafo} quality={100} priority alt="Omni Trafo" />
         </ImageColumn>
       </section>
     </HeroContainer>

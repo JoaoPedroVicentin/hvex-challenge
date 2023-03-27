@@ -121,26 +121,12 @@ export const ImageColumn = styled.div`
   align-items: center;
 
   img {
-    width: auto;
-
-    @media (max-width: 1400px) {
-      height: 35rem;
-    }
-
-    @media (max-width: 1124px) {
-      height: 32rem;
-    }
+    width: 90%;
+    height: auto;
 
     @media (max-width: 900px) {
       margin: 0 auto;
-    }
-
-    @media (max-width: 550px) {
-      height: 25rem;
-    }
-
-    @media (max-width: 445px) {
-      height: 20rem;
+      width: 75%;
     }
   }
 `
