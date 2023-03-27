@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const HeroSectionContainer = styled.section`
+export const HeroContainer = styled.section`
   background-color: ${(props) => props.theme.grayDark};
   color: ${(props) => props.theme.white};
 
@@ -24,6 +24,10 @@ export const HeroSectionContainer = styled.section`
 
   @media (max-width: 1024px) {
     padding: 2.5rem;
+  }
+
+  @media (max-width: 445px) {
+    padding: 2.5rem 1.5rem;
   }
 `
 export const InfosColumn = styled.div`
@@ -88,13 +92,21 @@ export const ImageColumn = styled.div`
   margin: -2rem 0;
 
   img {
-    @media (max-width: 620px) {
-      height: 30rem;
+    @media (max-width: 1400px) {
+      height: 40rem;
       width: auto;
     }
 
+    @media (max-width: 835px) {
+      height: 30rem;
+    }
+
+    @media (max-width: 620px) {
+      height: 25rem;
+    }
+
     @media (max-width: 375px) {
-      height: 22rem;
+      height: 20rem;
     }
   }
 

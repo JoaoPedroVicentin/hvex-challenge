@@ -94,7 +94,7 @@ export const DropdownMenuContent = styled(DropdownMenu.Content)`
   z-index: 10;
 
   background-color: #252835;
-  margin-top: 1.4rem;
+  margin-top: 1.55rem;
   color: ${(props) => props.theme.white};
   padding: 1.25rem 1rem 2rem;
   border: 1px solid ${(props) => props.theme.grayDark};

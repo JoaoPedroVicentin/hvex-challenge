@@ -1,11 +1,11 @@
 import Image from 'next/image'
-import { HeroSectionContainer, InfosColumn, ImageColumn } from './styles'
+import { HeroContainer, InfosColumn, ImageColumn } from './styles'
 import omniTrafo from '../../assets/omni-trafo.png'
 import Link from 'next/link'
 
 export function HeroSection() {
   return (
-    <HeroSectionContainer>
+    <HeroContainer>
       <section>
         <InfosColumn>
           <h1>
@@ -24,13 +24,13 @@ export function HeroSection() {
         <ImageColumn>
           <Image
             src={omniTrafo}
-            height={650}
+            height={750}
             quality={100}
             priority
             alt="Omni Trafo"
           />
         </ImageColumn>
       </section>
-    </HeroSectionContainer>
+    </HeroContainer>
   )
 }
