@@ -1,9 +1,9 @@
 import { AboutColumn, InfosColumn, OmniDescriptionContainer } from './styles'
 
-import sistemaProtecao from '../../assets/sistema-de-protecao.svg'
-import integracaoDados from '../../assets/integracao-de-dados.svg'
-import ativosEletricos from '../../assets/ativos-eletricos.svg'
-import comunicacaoInteligente from '../../assets/comunicacao-inteligente.svg'
+import sistemaProtecao from '../../assets/omniDescriptionAssets/sistema-de-protecao.svg'
+import integracaoDados from '../../assets/omniDescriptionAssets/integracao-de-dados.svg'
+import ativosEletricos from '../../assets/omniDescriptionAssets/ativos-eletricos.svg'
+import comunicacaoInteligente from '../../assets/omniDescriptionAssets/comunicacao-inteligente.svg'
 import Image from 'next/image'
 
 export function OmniDescriptionSection() {

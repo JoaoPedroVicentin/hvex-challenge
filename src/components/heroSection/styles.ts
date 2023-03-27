@@ -57,6 +57,7 @@ export const InfosColumn = styled.div`
     margin-top: 2rem;
 
     text-decoration: none;
+    border: 1px solid ${(props) => props.theme.blue};
     border-radius: 5px;
     padding: 0.75rem 1rem;
 
