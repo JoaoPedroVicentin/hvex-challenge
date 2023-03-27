@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const SmartEnergyContainer = styled.section`
-  padding: 5rem;
+  padding: 7rem 5rem;
   background-color: ${(props) => props.theme.white};
 
   position: relative;
