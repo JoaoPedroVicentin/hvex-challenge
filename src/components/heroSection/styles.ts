@@ -4,6 +4,10 @@ export const HeroContainer = styled.section`
   background-color: ${(props) => props.theme.grayDark};
   color: ${(props) => props.theme.white};
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   margin-top: 6rem;
   padding: 0 5rem;
 
@@ -13,12 +17,15 @@ export const HeroContainer = styled.section`
     display: grid;
     grid-template-columns: 2fr 1fr;
 
-    margin: 0 auto;
-
     @media (max-width: 975px) {
       grid-template-columns: 1fr;
       gap: 2.5rem;
     }
+  }
+
+  @media (min-width: 975px) {
+    height: calc(100vh - 6rem);
+    max-height: 935px;
   }
 
   @media (max-width: 1024px) {
@@ -35,8 +42,6 @@ export const InfosColumn = styled.div`
   justify-content: center;
   flex-direction: column;
   gap: 2rem;
-  padding: 5rem 0;
-
   margin-right: -5vw;
 
   a {
