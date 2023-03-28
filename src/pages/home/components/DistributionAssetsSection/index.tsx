@@ -1,7 +1,7 @@
 import { DistributionAssetsContainer, ImageColumn, InfosColumn } from './styles'
 import CheckIcon from '@mui/icons-material/Check'
 
-import ativosDeDistribuicao from '../../assets/distribution-assets/ativos-de-distribuicao.png'
+import ativosDeDistribuicao from '../../../../assets/distribution-assets/ativos-de-distribuicao.png'
 import Image from 'next/image'
 
 export function DistributionAssetsSection() {

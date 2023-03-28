@@ -7,15 +7,15 @@ import {
   Title,
 } from './styles'
 
-import omniTrafo2 from '../../assets/about-omni/omni-trafo-2.png'
-import monitoramentoDeTensao from '../../assets/about-omni/monitoramento-de-tensao.svg'
-import analiseDePerda from '../../assets/about-omni/analise-de-perda.svg'
-import medicaoDoBalanco from '../../assets/about-omni/medicao-do-balanco.svg'
-import deteccaoDeFaltas from '../../assets/about-omni/deteccao-de-faltas.svg'
-import analiseDeFator from '../../assets/about-omni/analise-de-fator.svg'
-import harmonicasDeCorrente from '../../assets/about-omni/harmonicas-de-corrente.svg'
-import medicaoDeTemperatura from '../../assets/about-omni/medicao-de-temperatura.svg'
-import supervisaoDeBaixaTensao from '../../assets/about-omni/supervisao-de-baixa-tensao.svg'
+import omniTrafo2 from '../../../../assets/about-omni/omni-trafo-2.png'
+import monitoramentoDeTensao from '../../../../assets/about-omni/monitoramento-de-tensao.svg'
+import analiseDePerda from '../../../../assets/about-omni/analise-de-perda.svg'
+import medicaoDoBalanco from '../../../../assets/about-omni/medicao-do-balanco.svg'
+import deteccaoDeFaltas from '../../../../assets/about-omni/deteccao-de-faltas.svg'
+import analiseDeFator from '../../../../assets/about-omni/analise-de-fator.svg'
+import harmonicasDeCorrente from '../../../../assets/about-omni/harmonicas-de-corrente.svg'
+import medicaoDeTemperatura from '../../../../assets/about-omni/medicao-de-temperatura.svg'
+import supervisaoDeBaixaTensao from '../../../../assets/about-omni/supervisao-de-baixa-tensao.svg'
 
 export function AboutOmniSection() {
   const datas = [

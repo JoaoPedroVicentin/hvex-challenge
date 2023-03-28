@@ -3,7 +3,6 @@ import {
   DropdownMenuTrigger,
   HeaderContainer,
   NavigationButton,
-  NavigationButtonPurchase,
   IconButton,
   DropdownMenuContent,
 } from './styles'
@@ -11,6 +10,7 @@ import * as DropdownMenu from '@radix-ui/react-dropdown-menu'
 import MenuIcon from '@mui/icons-material/Menu'
 
 import logo from '../../assets/logo-hvex.svg'
+import { Button } from '../Button'
 
 export function Header() {
   return (
@@ -31,7 +31,7 @@ export function Header() {
             <NavigationButton>Acoplador DP</NavigationButton>
           </li>
           <li>
-            <NavigationButtonPurchase>Comprar agora</NavigationButtonPurchase>
+            <Button content="Comprar agora" />
           </li>
         </ul>
 
@@ -54,9 +54,7 @@ export function Header() {
                 <NavigationButton>Acoplador DP</NavigationButton>
               </DropdownMenu.Item>
               <DropdownMenu.Item>
-                <NavigationButtonPurchase>
-                  Comprar agora
-                </NavigationButtonPurchase>
+                <Button content="Comprar agora" />
               </DropdownMenu.Item>
             </DropdownMenuContent>
           </DropdownMenu.Portal>

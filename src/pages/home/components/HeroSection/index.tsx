@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import { HeroContainer, InfosColumn, ImageColumn } from './styles'
-import omniTrafo from '../../assets/hero/omni-trafo.png'
+import omniTrafo from '../../../../assets/hero/omni-trafo.png'
 import Link from 'next/link'
 
 export function HeroSection() {
