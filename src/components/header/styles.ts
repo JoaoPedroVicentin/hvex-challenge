@@ -47,7 +47,7 @@ export const HeaderContainer = styled.header`
 `
 
 export const NavigationButton = styled.a`
-  color: ${(props) => props.theme.white};
+  color: ${(props) => props.theme.whiteLight};
   text-decoration: none;
 
   &:focus,
@@ -64,7 +64,7 @@ export const NavigationButtonPurchase = styled(NavigationButton)`
 
   &:hover {
     background-color: ${(props) => props.theme.blue};
-    color: ${(props) => props.theme.white};
+    color: ${(props) => props.theme.whiteLight};
   }
 `
 
@@ -83,7 +83,7 @@ export const IconButton = styled.button`
   justify-content: center;
   background: none;
   border: none;
-  color: ${(props) => props.theme.white};
+  color: ${(props) => props.theme.whiteLight};
 
   @media (max-width: 768px) {
     display: flex;
@@ -95,7 +95,7 @@ export const DropdownMenuContent = styled(DropdownMenu.Content)`
 
   background-color: #252835;
   margin-top: 1.55rem;
-  color: ${(props) => props.theme.white};
+  color: ${(props) => props.theme.whiteLight};
   padding: 1.25rem 1rem 2rem;
   border: 1px solid ${(props) => props.theme.grayDark};
   width: 13rem;

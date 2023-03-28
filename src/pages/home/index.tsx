@@ -1,7 +1,8 @@
-import { AboutOmniSection } from '../../components/aboutOmniSection'
-import { HeroSection } from '../../components/heroSection'
-import { OmniDescriptionSection } from '../../components/omniDescriptionSection'
-import { SmartEnergySection } from '../../components/smartEnergySection'
+import { AboutOmniSection } from '../../components/AboutOmniSection'
+import { DistributionAssetsSection } from '../../components/DistributionAssetsSection'
+import { HeroSection } from '../../components/HeroSection'
+import { OmniDescriptionSection } from '../../components/OmniDescriptionSection'
+import { SmartEnergySection } from '../../components/SmartEnergySection'
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <SmartEnergySection />
       <OmniDescriptionSection />
       <AboutOmniSection />
+      <DistributionAssetsSection />
     </>
   )
 }

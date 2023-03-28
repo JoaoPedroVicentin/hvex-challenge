@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const OmniDescriptionContainer = styled.section`
   background-color: ${(props) => props.theme.grayDark};
-  color: ${(props) => props.theme.white};
+  color: ${(props) => props.theme.whiteLight};
 
   padding: 7rem 5rem;
 

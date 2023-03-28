@@ -1,6 +1,6 @@
 import { ImageColumn, InfosColumn, SmartEnergyContainer } from './styles'
 import CheckIcon from '@mui/icons-material/Check'
-import inteligentEnergy from '../../assets/smartEnergyAssets/inteligent-energy.png'
+import inteligentEnergy from '../../assets/smart-energy/inteligent-energy.png'
 import Image from 'next/image'
 
 export function SmartEnergySection() {

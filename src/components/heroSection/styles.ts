@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const HeroContainer = styled.section`
   background-color: ${(props) => props.theme.grayDark};
-  color: ${(props) => props.theme.white};
+  color: ${(props) => props.theme.whiteLight};
 
   display: flex;
   align-items: center;
@@ -49,7 +49,7 @@ export const InfosColumn = styled.div`
     width: 15rem;
 
     background-color: ${(props) => props.theme.blue};
-    color: ${(props) => props.theme.white};
+    color: ${(props) => props.theme.whiteLight};
 
     display: flex;
     align-items: center;

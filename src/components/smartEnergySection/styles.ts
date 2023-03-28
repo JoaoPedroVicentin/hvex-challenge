@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const SmartEnergyContainer = styled.section`
   padding: 7rem 5rem;
-  background-color: ${(props) => props.theme.white};
+  background-color: ${(props) => props.theme.whiteLight};
 
   position: relative;
   z-index: 2;
@@ -73,7 +73,7 @@ export const InfosColumn = styled.div`
 
       span {
         background-color: ${(props) => props.theme.blueDark};
-        color: ${(props) => props.theme.white};
+        color: ${(props) => props.theme.whiteLight};
 
         display: flex;
         align-items: center;
