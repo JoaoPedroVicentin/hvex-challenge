@@ -37,6 +37,22 @@ export const ContactContainer = styled.section`
           margin-bottom: -1.5rem;
         }
       }
+
+      @media (max-width: 595px) {
+        font-size: 1.5rem;
+      }
+
+      @media (max-width: 425px) {
+        font-size: 1.25rem;
+      }
     }
+
+    @media (max-width: 595px) {
+      gap: 3rem;
+    }
+  }
+
+  @media (max-width: 595px) {
+    padding: 2.5rem;
   }
 `
