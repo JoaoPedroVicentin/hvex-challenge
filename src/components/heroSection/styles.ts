@@ -42,6 +42,7 @@ export const InfosColumn = styled.div`
   justify-content: center;
   flex-direction: column;
   gap: 2rem;
+
   margin-right: -15%;
 
   a {

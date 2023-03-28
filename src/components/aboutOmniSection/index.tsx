@@ -1,5 +1,11 @@
 import Image from 'next/image'
-import { AboutOmniColumn, AboutOmniContainer, ImageColumn } from './styles'
+import {
+  AboutOmniColumn,
+  AboutOmniContainer,
+  ImageColumn,
+  InfosOmni,
+  Title,
+} from './styles'
 
 import omniTrafo2 from '../../assets/aboutOmniAssets/omni-trafo-2.png'
 import monitoramentoDeTensao from '../../assets/aboutOmniAssets/monitoramento-de-tensao.svg'
@@ -55,7 +61,9 @@ export function AboutOmniSection() {
         </ImageColumn>
 
         <AboutOmniColumn>
-          <h2>OMNI TRAFO</h2>
+          <Title>
+            <h2>OMNI TRAFO</h2>
+          </Title>
           <h2>Monitoramento inteligente de transformadores de distribuição</h2>
           <h4>
             O Omni trafo é uma solução consolidada para monitoramento de ativos.
@@ -63,7 +71,7 @@ export function AboutOmniSection() {
             enviadas em tempo real , permitindo, assim, a administração remota
             de dados como:
           </h4>
-          <div>
+          <InfosOmni>
             {datas.map((data) => {
               return (
                 <div key={data.title}>
@@ -74,7 +82,7 @@ export function AboutOmniSection() {
                 </div>
               )
             })}
-          </div>
+          </InfosOmni>
         </AboutOmniColumn>
       </section>
     </AboutOmniContainer>

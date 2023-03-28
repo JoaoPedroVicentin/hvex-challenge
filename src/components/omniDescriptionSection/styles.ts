@@ -107,6 +107,10 @@ export const InfosColumn = styled.div`
     @media (max-width: 595px) {
       width: 100%;
     }
+
+    @media (max-width: 435px) {
+      width: 75%;
+    }
   }
 
   @media (max-width: 1155px) {

@@ -50,7 +50,7 @@ export function OmniDescriptionSection() {
             return (
               <div key={data.title}>
                 <Image src={data.img} width={100} alt={data.title} />
-                <h3>{data.title}</h3>
+                <h5>{data.title}</h5>
               </div>
             )
           })}
