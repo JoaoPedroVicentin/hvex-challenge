@@ -23,8 +23,8 @@ export const OmniDescriptionContainer = styled.section`
     padding: 5rem 2.5rem;
   }
 
-  @media (max-width: 595px) {
-    padding: 2.5rem;
+  @media (max-width: 445px) {
+    padding: 2.5rem 1rem;
   }
 `
 
@@ -100,7 +100,6 @@ export const InfosColumn = styled.div`
       }
 
       @media (max-width: 435px) {
-        width: 6.5rem;
       }
     }
 
@@ -109,7 +108,7 @@ export const InfosColumn = styled.div`
     }
 
     @media (max-width: 435px) {
-      width: 75%;
+      width: 60%;
     }
   }
 

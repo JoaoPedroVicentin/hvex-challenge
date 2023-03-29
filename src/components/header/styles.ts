@@ -44,6 +44,10 @@ export const HeaderContainer = styled.header`
   @media (max-width: 1024px) {
     padding: 1rem 2.5rem;
   }
+
+  @media (max-width: 445px) {
+    padding: 1rem;
+  }
 `
 
 export const NavigationButton = styled.a`

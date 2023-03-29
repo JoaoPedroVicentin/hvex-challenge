@@ -39,7 +39,7 @@ export const SmartEnergyContainer = styled.section`
   }
 
   @media (max-width: 445px) {
-    padding: 2.5rem 1.5rem;
+    padding: 2.5rem 1rem;
   }
 `
 

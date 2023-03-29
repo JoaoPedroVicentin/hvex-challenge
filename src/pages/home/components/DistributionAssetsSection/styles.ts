@@ -21,8 +21,8 @@ export const DistributionAssetsContainer = styled.section`
     padding: 2.5rem;
   }
 
-  @media (max-width: 595px) {
-    padding: 2rem 2.5rem;
+  @media (max-width: 445px) {
+    padding: 2rem 1rem;
   }
 `
 
@@ -92,7 +92,7 @@ export const InfosColumn = styled.div`
       }
     }
 
-    @media (max-width: 595px) {
+    @media (max-width: 445px) {
       font-size: 1.5rem;
     }
   }

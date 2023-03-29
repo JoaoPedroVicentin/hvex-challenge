@@ -17,6 +17,10 @@ export const FooterContainer = styled.footer`
   @media (max-width: 1024px) {
     padding: 2rem 2.5rem;
   }
+
+  @media (max-width: 445px) {
+    padding: 2rem 1rem;
+  }
 `
 
 export const InfosDiv = styled.div`

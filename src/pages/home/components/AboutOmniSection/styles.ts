@@ -20,8 +20,8 @@ export const AboutOmniContainer = styled.section`
     padding: 5rem 2.5rem;
   }
 
-  @media (max-width: 595px) {
-    padding: 2.5rem;
+  @media (max-width: 445px) {
+    padding: 2.5rem 1rem;
   }
 `
 
