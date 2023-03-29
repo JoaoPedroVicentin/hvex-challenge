@@ -1,4 +1,3 @@
-import { Footer } from '../../components/Footer'
 import { AboutOmniSection } from './components/AboutOmniSection'
 import { ContactSection } from './components/ContactSection'
 import { DistributionAssetsSection } from './components/DistributionAssetsSection'
@@ -17,7 +16,6 @@ export default function Home() {
       <DistributionAssetsSection />
       <ContactSection />
       <QuestionSections />
-      <Footer />
     </>
   )
 }
