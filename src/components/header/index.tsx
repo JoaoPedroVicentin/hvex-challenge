@@ -11,14 +11,15 @@ import MenuIcon from '@mui/icons-material/Menu'
 
 import logo from '../../assets/logo-hvex.svg'
 import { Button } from '../Button'
+import Link from 'next/link'
 
 export function Header() {
   return (
     <HeaderContainer>
       <nav>
-        <a>
+        <Link href="https://hvex.com.br/" target="_blank">
           <Image src={logo} width={115} alt="Logo Hvex" />
-        </a>
+        </Link>
 
         <ul>
           <li>
