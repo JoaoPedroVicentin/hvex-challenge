@@ -1,59 +1,62 @@
 import styled from 'styled-components'
 
-export const DistributionAssetsContainer = styled.section`
-  background-color: ${(props) => props.theme.white};
+export const Container = styled.section`
+  padding: 7rem 5rem;
+  background-color: ${(props) => props.theme.whiteLight};
 
-  padding: 2rem 5rem;
+  position: relative;
+  z-index: 2;
 
   section {
     max-width: 1440px;
-    margin: 0 auto;
 
     display: grid;
+    gap: 5rem;
     grid-template-columns: 1fr 1fr;
+
+    margin: 0 auto;
+
+    @media (max-width: 1210px) {
+      gap: 2.5rem;
+    }
 
     @media (max-width: 900px) {
       grid-template-columns: 1fr;
+      gap: 5rem;
+    }
+
+    @media (max-width: 445px) {
+      gap: 2.5rem;
     }
   }
 
   @media (max-width: 1024px) {
+    padding: 5rem 2.5rem;
+  }
+
+  @media (max-width: 900px) {
     padding: 2.5rem;
   }
 
   @media (max-width: 445px) {
-    padding: 2rem 1rem;
+    padding: 2.5rem 1rem;
   }
 `
 
 export const InfosColumn = styled.div`
   display: flex;
   flex-direction: column;
+
   justify-content: center;
-  gap: 4rem;
+
+  gap: 3rem;
 
   h2 {
-    position: relative;
+    color: #115678;
+  }
 
-    &::after {
-      content: '';
-      background-color: ${(props) => props.theme.blue};
-      width: 11rem;
-      height: 0.25rem;
-
-      left: 0;
-      bottom: 0;
-      margin-bottom: -2rem;
-      position: absolute;
-
-      @media (max-width: 595px) {
-        margin-bottom: -1.5rem;
-      }
-    }
-
-    @media (max-width: 595px) {
-      font-size: 1.5rem;
-    }
+  h4 {
+    line-height: 155%;
   }
 
   ul {
@@ -69,7 +72,7 @@ export const InfosColumn = styled.div`
       gap: 1rem;
 
       span {
-        background-color: ${(props) => props.theme.grayDark};
+        background-color: ${(props) => props.theme.blueDark};
         color: ${(props) => props.theme.whiteLight};
 
         display: flex;
@@ -92,25 +95,37 @@ export const InfosColumn = styled.div`
       }
     }
 
-    @media (max-width: 445px) {
-      font-size: 1.5rem;
+    @media (max-width: 550px) {
+      gap: 1.25rem;
     }
   }
 
-  @media (max-width: 595px) {
-    gap: 3rem;
+  @media (max-width: 900px) {
+    grid-row: 1;
+    gap: 2rem;
+  }
+
+  @media (max-width: 445px) {
+    h2 {
+      font-size: 1.5rem;
+    }
+
+    h4 {
+      font-size: 1rem;
+    }
   }
 `
 
 export const ImageColumn = styled.div`
   display: flex;
-  justify-content: center;
+  align-items: center;
 
   img {
-    width: 115%;
+    width: 90%;
     height: auto;
 
     @media (max-width: 900px) {
+      margin: 0 auto;
       width: 75%;
     }
   }

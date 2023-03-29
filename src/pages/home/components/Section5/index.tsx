@@ -1,10 +1,10 @@
-import { DistributionAssetsContainer, ImageColumn, InfosColumn } from './styles'
+import { Container, ImageColumn, InfosColumn } from './styles'
 import CheckIcon from '@mui/icons-material/Check'
 
-import ativosDeDistribuicao from '../../../../assets/distribution-assets/ativos-de-distribuicao.png'
+import ativosDeDistribuicao from '../../../../assets/section-5/ativos-de-distribuicao.png'
 import Image from 'next/image'
 
-export function DistributionAssetsSection() {
+export function Section5() {
   const datas = [
     {
       id: 1,
@@ -37,7 +37,7 @@ export function DistributionAssetsSection() {
   ]
 
   return (
-    <DistributionAssetsContainer>
+    <Container>
       <section>
         <InfosColumn>
           <h2>
@@ -61,6 +61,6 @@ export function DistributionAssetsSection() {
           <Image src={ativosDeDistribuicao} alt="Ativos de distribuição" />
         </ImageColumn>
       </section>
-    </DistributionAssetsContainer>
+    </Container>
   )
 }

@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const ContactContainer = styled.section`
+export const Container = styled.section`
   background-color: ${(props) => props.theme.gray};
   color: ${(props) => props.theme.white};
   padding: 5rem;

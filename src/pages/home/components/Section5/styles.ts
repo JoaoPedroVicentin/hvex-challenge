@@ -1,62 +1,59 @@
 import styled from 'styled-components'
 
-export const SmartEnergyContainer = styled.section`
-  padding: 7rem 5rem;
-  background-color: ${(props) => props.theme.whiteLight};
+export const Container = styled.section`
+  background-color: ${(props) => props.theme.white};
 
-  position: relative;
-  z-index: 2;
+  padding: 2rem 5rem;
 
   section {
     max-width: 1440px;
-
-    display: grid;
-    gap: 5rem;
-    grid-template-columns: 1fr 1fr;
-
     margin: 0 auto;
 
-    @media (max-width: 1210px) {
-      gap: 2.5rem;
-    }
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 
     @media (max-width: 900px) {
       grid-template-columns: 1fr;
-      gap: 5rem;
-    }
-
-    @media (max-width: 445px) {
-      gap: 2.5rem;
     }
   }
 
   @media (max-width: 1024px) {
-    padding: 5rem 2.5rem;
-  }
-
-  @media (max-width: 900px) {
     padding: 2.5rem;
   }
 
   @media (max-width: 445px) {
-    padding: 2.5rem 1rem;
+    padding: 2rem 1rem;
   }
 `
 
 export const InfosColumn = styled.div`
   display: flex;
   flex-direction: column;
-
   justify-content: center;
-
-  gap: 3rem;
+  gap: 4rem;
 
   h2 {
-    color: #115678;
-  }
+    position: relative;
 
-  h4 {
-    line-height: 155%;
+    &::after {
+      content: '';
+      background-color: ${(props) => props.theme.blue};
+      width: 11rem;
+      height: 0.25rem;
+
+      left: 0;
+      bottom: 0;
+      margin-bottom: -2rem;
+      position: absolute;
+
+      @media (max-width: 595px) {
+        margin-bottom: -1.5rem;
+      }
+    }
+
+    @media (max-width: 595px) {
+      font-size: 1.5rem;
+    }
   }
 
   ul {
@@ -72,7 +69,7 @@ export const InfosColumn = styled.div`
       gap: 1rem;
 
       span {
-        background-color: ${(props) => props.theme.blueDark};
+        background-color: ${(props) => props.theme.grayDark};
         color: ${(props) => props.theme.whiteLight};
 
         display: flex;
@@ -95,37 +92,25 @@ export const InfosColumn = styled.div`
       }
     }
 
-    @media (max-width: 550px) {
-      gap: 1.25rem;
-    }
-  }
-
-  @media (max-width: 900px) {
-    grid-row: 1;
-    gap: 2rem;
-  }
-
-  @media (max-width: 445px) {
-    h2 {
+    @media (max-width: 445px) {
       font-size: 1.5rem;
     }
+  }
 
-    h4 {
-      font-size: 1rem;
-    }
+  @media (max-width: 595px) {
+    gap: 3rem;
   }
 `
 
 export const ImageColumn = styled.div`
   display: flex;
-  align-items: center;
+  justify-content: center;
 
   img {
-    width: 90%;
+    width: 115%;
     height: auto;
 
     @media (max-width: 900px) {
-      margin: 0 auto;
       width: 75%;
     }
   }

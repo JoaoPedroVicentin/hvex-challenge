@@ -2,7 +2,7 @@ import styled, { keyframes } from 'styled-components'
 import * as Accordion from '@radix-ui/react-accordion'
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown'
 
-export const QuestionsContainer = styled.section`
+export const Container = styled.section`
   background-color: ${(props) => props.theme.white};
 
   padding: 7rem 5rem;

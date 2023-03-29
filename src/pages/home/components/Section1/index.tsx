@@ -1,13 +1,24 @@
+import { useEffect } from 'react'
+
 import Image from 'next/image'
-import { HeroContainer, InfosColumn, ImageColumn } from './styles'
-import omniTrafo from '../../../../assets/hero/omni-trafo.png'
 import Link from 'next/link'
 
-export function HeroSection() {
+import { Container, InfosColumn, ImageColumn } from './styles'
+
+import omniTrafo from '../../../../assets/section-1/omni-trafo.png'
+
+import Aos from 'aos'
+import 'aos/dist/aos.css'
+
+export function Section1() {
+  useEffect(() => {
+    Aos.init({ duration: 500, once: true, delay: 150 })
+  }, [])
+
   return (
-    <HeroContainer>
+    <Container>
       <section>
-        <InfosColumn>
+        <InfosColumn data-aos="fade-right">
           <h1>
             Tenha Informações em tempo real das condições dos ativos e com o
             monitoramento inteligente
@@ -25,6 +36,6 @@ export function HeroSection() {
           <Image src={omniTrafo} quality={100} priority alt="Omni Trafo" />
         </ImageColumn>
       </section>
-    </HeroContainer>
+    </Container>
   )
 }

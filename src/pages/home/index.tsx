@@ -1,12 +1,12 @@
 import { NextSeo } from 'next-seo'
 
-import { AboutOmniSection } from './components/AboutOmniSection'
-import { ContactSection } from './components/ContactSection'
-import { DistributionAssetsSection } from './components/DistributionAssetsSection'
-import { HeroSection } from './components/HeroSection'
-import { OmniDescriptionSection } from './components/OmniDescriptionSection'
-import { QuestionSections } from './components/QuestionsSection'
-import { SmartEnergySection } from './components/SmartEnergySection'
+import { Section1 } from './components/Section1'
+import { Section2 } from './components/Section2'
+import { Section3 } from './components/Section3'
+import { Section4 } from './components/Section4'
+import { Section5 } from './components/Section5'
+import { Section6 } from './components/Section6'
+import { Section7 } from './components/Section7'
 
 export default function Home() {
   return (
@@ -15,13 +15,13 @@ export default function Home() {
         title=" HVEX | Omni Trafo"
         description="Tenha Informações em tempo real das condições dos ativos e com o monitoramento inteligente"
       />
-      <HeroSection />
-      <SmartEnergySection />
-      <OmniDescriptionSection />
-      <AboutOmniSection />
-      <DistributionAssetsSection />
-      <ContactSection />
-      <QuestionSections />
+      <Section1 />
+      <Section2 />
+      <Section3 />
+      <Section4 />
+      <Section5 />
+      <Section6 />
+      <Section7 />
     </>
   )
 }

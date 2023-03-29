@@ -1,12 +1,12 @@
-import { AboutColumn, InfosColumn, OmniDescriptionContainer } from './styles'
+import { AboutColumn, InfosColumn, Container } from './styles'
 
-import sistemaProtecao from '../../../../assets/omni-description/sistema-de-protecao.svg'
-import integracaoDados from '../../../../assets/omni-description/integracao-de-dados.svg'
-import ativosEletricos from '../../../../assets/omni-description/ativos-eletricos.svg'
-import comunicacaoInteligente from '../../../../assets/omni-description/comunicacao-inteligente.svg'
+import sistemaProtecao from '../../../../assets/section-3/sistema-de-protecao.svg'
+import integracaoDados from '../../../../assets/section-3/integracao-de-dados.svg'
+import ativosEletricos from '../../../../assets/section-3/ativos-eletricos.svg'
+import comunicacaoInteligente from '../../../../assets/section-3/comunicacao-inteligente.svg'
 import Image from 'next/image'
 
-export function OmniDescriptionSection() {
+export function Section3() {
   const datas = [
     {
       id: 1,
@@ -31,7 +31,7 @@ export function OmniDescriptionSection() {
   ]
 
   return (
-    <OmniDescriptionContainer>
+    <Container>
       <section>
         <AboutColumn>
           <h2>OMNI TRAFO</h2>
@@ -60,6 +60,6 @@ export function OmniDescriptionSection() {
           })}
         </InfosColumn>
       </section>
-    </OmniDescriptionContainer>
+    </Container>
   )
 }

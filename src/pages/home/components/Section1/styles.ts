@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const HeroContainer = styled.section`
+export const Container = styled.section`
   background-color: ${(props) => props.theme.grayDark};
   color: ${(props) => props.theme.whiteLight};
 

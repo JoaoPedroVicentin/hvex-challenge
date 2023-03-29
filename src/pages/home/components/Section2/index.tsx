@@ -1,9 +1,9 @@
-import { ImageColumn, InfosColumn, SmartEnergyContainer } from './styles'
+import { ImageColumn, InfosColumn, Container } from './styles'
 import CheckIcon from '@mui/icons-material/Check'
-import inteligentEnergy from '../../../../assets/smart-energy/inteligent-energy.png'
+import inteligentEnergy from '../../../../assets/section-2/inteligent-energy.png'
 import Image from 'next/image'
 
-export function SmartEnergySection() {
+export function Section2() {
   const datas = [
     {
       id: 1,
@@ -24,7 +24,7 @@ export function SmartEnergySection() {
   ]
 
   return (
-    <SmartEnergyContainer>
+    <Container>
       <section>
         <ImageColumn>
           <Image
@@ -55,6 +55,6 @@ export function SmartEnergySection() {
           </ul>
         </InfosColumn>
       </section>
-    </SmartEnergyContainer>
+    </Container>
   )
 }

@@ -5,10 +5,10 @@ import {
   AccordionRoot,
   AccordionTrigger,
   Arrow,
-  QuestionsContainer,
+  Container,
 } from './styles'
 
-export function QuestionSections() {
+export function Section7() {
   const datas = [
     {
       id: 1,
@@ -41,7 +41,7 @@ export function QuestionSections() {
   ]
 
   return (
-    <QuestionsContainer>
+    <Container>
       <section>
         <h2>Perguntas Frequentes</h2>
 
@@ -63,6 +63,6 @@ export function QuestionSections() {
           })}
         </AccordionRoot>
       </section>
-    </QuestionsContainer>
+    </Container>
   )
 }

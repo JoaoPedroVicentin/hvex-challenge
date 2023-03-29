@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const AboutOmniContainer = styled.section`
+export const Container = styled.section`
   padding: 7rem 5rem;
 
   section {

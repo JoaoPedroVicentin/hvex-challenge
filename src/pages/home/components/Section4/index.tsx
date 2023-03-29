@@ -1,23 +1,23 @@
 import Image from 'next/image'
 import {
   AboutOmniColumn,
-  AboutOmniContainer,
+  Container,
   ImageColumn,
   InfosOmni,
   Title,
 } from './styles'
 
-import omniTrafo2 from '../../../../assets/about-omni/omni-trafo-2.png'
-import monitoramentoDeTensao from '../../../../assets/about-omni/monitoramento-de-tensao.svg'
-import analiseDePerda from '../../../../assets/about-omni/analise-de-perda.svg'
-import medicaoDoBalanco from '../../../../assets/about-omni/medicao-do-balanco.svg'
-import deteccaoDeFaltas from '../../../../assets/about-omni/deteccao-de-faltas.svg'
-import analiseDeFator from '../../../../assets/about-omni/analise-de-fator.svg'
-import harmonicasDeCorrente from '../../../../assets/about-omni/harmonicas-de-corrente.svg'
-import medicaoDeTemperatura from '../../../../assets/about-omni/medicao-de-temperatura.svg'
-import supervisaoDeBaixaTensao from '../../../../assets/about-omni/supervisao-de-baixa-tensao.svg'
+import omniTrafo2 from '../../../../assets/section-4/omni-trafo-2.png'
+import monitoramentoDeTensao from '../../../../assets/section-4/monitoramento-de-tensao.svg'
+import analiseDePerda from '../../../../assets/section-4/analise-de-perda.svg'
+import medicaoDoBalanco from '../../../../assets/section-4/medicao-do-balanco.svg'
+import deteccaoDeFaltas from '../../../../assets/section-4/deteccao-de-faltas.svg'
+import analiseDeFator from '../../../../assets/section-4/analise-de-fator.svg'
+import harmonicasDeCorrente from '../../../../assets/section-4/harmonicas-de-corrente.svg'
+import medicaoDeTemperatura from '../../../../assets/section-4/medicao-de-temperatura.svg'
+import supervisaoDeBaixaTensao from '../../../../assets/section-4/supervisao-de-baixa-tensao.svg'
 
-export function AboutOmniSection() {
+export function Section4() {
   const datas = [
     {
       id: 1,
@@ -62,7 +62,7 @@ export function AboutOmniSection() {
   ]
 
   return (
-    <AboutOmniContainer>
+    <Container>
       <section>
         <ImageColumn>
           <Image src={omniTrafo2} alt="Omni trafo 2" />
@@ -93,6 +93,6 @@ export function AboutOmniSection() {
           </InfosOmni>
         </AboutOmniColumn>
       </section>
-    </AboutOmniContainer>
+    </Container>
   )
 }

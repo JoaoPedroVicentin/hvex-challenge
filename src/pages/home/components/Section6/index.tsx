@@ -1,9 +1,9 @@
 import { Button } from '../../../../components/Button'
-import { ContactContainer } from './styles'
+import { Container } from './styles'
 
-export function ContactSection() {
+export function Section6() {
   return (
-    <ContactContainer>
+    <Container>
       <div>
         <h2>
           Quer saber mais sobre como podemos te ajudar a melhorar a performance
@@ -11,6 +11,6 @@ export function ContactSection() {
         </h2>
         <Button content="Falar com um consultor" />
       </div>
-    </ContactContainer>
+    </Container>
   )
 }
