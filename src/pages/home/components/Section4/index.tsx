@@ -1,4 +1,7 @@
+import { useEffect } from 'react'
+
 import Image from 'next/image'
+
 import {
   AboutOmniColumn,
   Container,
@@ -17,7 +20,14 @@ import harmonicasDeCorrente from '../../../../assets/section-4/harmonicas-de-cor
 import medicaoDeTemperatura from '../../../../assets/section-4/medicao-de-temperatura.svg'
 import supervisaoDeBaixaTensao from '../../../../assets/section-4/supervisao-de-baixa-tensao.svg'
 
+import Aos from 'aos'
+import 'aos/dist/aos.css'
+
 export function Section4() {
+  useEffect(() => {
+    Aos.init({ duration: 500, once: true, delay: 50 })
+  }, [])
+
   const datas = [
     {
       id: 1,
@@ -82,7 +92,11 @@ export function Section4() {
           <InfosOmni>
             {datas.map((data) => {
               return (
-                <div key={data.id}>
+                <div
+                  key={data.id}
+                  data-aos="fade-up"
+                  data-aos-delay={data.id * 100}
+                >
                   <span>
                     <Image src={data.img} alt={data.title} />
                   </span>

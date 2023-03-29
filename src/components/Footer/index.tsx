@@ -1,3 +1,6 @@
+import Image from 'next/image'
+import Link from 'next/link'
+
 import {
   Address,
   Contact,
@@ -8,13 +11,11 @@ import {
 } from './styles'
 
 import logo from '../../assets/logo-hvex.svg'
-import Image from 'next/image'
 
 import LinkedInIcon from '@mui/icons-material/LinkedIn'
 import FacebookIcon from '@mui/icons-material/Facebook'
 import InstagramIcon from '@mui/icons-material/Instagram'
 import YouTubeIcon from '@mui/icons-material/YouTube'
-import Link from 'next/link'
 
 export function Footer() {
   return (

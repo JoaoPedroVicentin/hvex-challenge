@@ -1,9 +1,21 @@
-import { ImageColumn, InfosColumn, Container } from './styles'
-import CheckIcon from '@mui/icons-material/Check'
-import inteligentEnergy from '../../../../assets/section-2/inteligent-energy.png'
+import { useEffect } from 'react'
+
 import Image from 'next/image'
 
+import { ImageColumn, InfosColumn, Container } from './styles'
+
+import inteligentEnergy from '../../../../assets/section-2/inteligent-energy.png'
+
+import CheckIcon from '@mui/icons-material/Check'
+
+import Aos from 'aos'
+import 'aos/dist/aos.css'
+
 export function Section2() {
+  useEffect(() => {
+    Aos.init({ duration: 500, once: true, delay: 150 })
+  }, [])
+
   const datas = [
     {
       id: 1,
@@ -33,7 +45,7 @@ export function Section2() {
             alt="Ilustrations about inteligent energy"
           />
         </ImageColumn>
-        <InfosColumn>
+        <InfosColumn data-aos="fade-right">
           <h2>Seja bem-vindo a era da energia inteligente</h2>
           <h4>
             As redes inteligentes são um caminho sem volta, o desenvolvimento e

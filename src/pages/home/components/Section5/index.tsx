@@ -1,10 +1,21 @@
-import { Container, ImageColumn, InfosColumn } from './styles'
-import CheckIcon from '@mui/icons-material/Check'
+import { useEffect } from 'react'
 
-import ativosDeDistribuicao from '../../../../assets/section-5/ativos-de-distribuicao.png'
 import Image from 'next/image'
 
+import { Container, ImageColumn, InfosColumn } from './styles'
+
+import ativosDeDistribuicao from '../../../../assets/section-5/ativos-de-distribuicao.png'
+
+import CheckIcon from '@mui/icons-material/Check'
+
+import Aos from 'aos'
+import 'aos/dist/aos.css'
+
 export function Section5() {
+  useEffect(() => {
+    Aos.init({ duration: 500, once: true, delay: 150 })
+  }, [])
+
   const datas = [
     {
       id: 1,
@@ -39,7 +50,7 @@ export function Section5() {
   return (
     <Container>
       <section>
-        <InfosColumn>
+        <InfosColumn data-aos="fade-right">
           <h2>
             Desenvolvido para melhorar a performance dos ativos de distribuição
           </h2>

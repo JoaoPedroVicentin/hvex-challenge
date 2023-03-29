@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <>
       <NextSeo
-        title=" HVEX | Omni Trafo"
+        title="HVEX | Omni Trafo"
         description="Tenha Informações em tempo real das condições dos ativos e com o monitoramento inteligente"
       />
       <Section1 />

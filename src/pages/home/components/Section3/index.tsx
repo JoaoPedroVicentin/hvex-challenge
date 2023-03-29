@@ -1,12 +1,22 @@
+import { useEffect } from 'react'
+
+import Image from 'next/image'
+
 import { AboutColumn, InfosColumn, Container } from './styles'
 
 import sistemaProtecao from '../../../../assets/section-3/sistema-de-protecao.svg'
 import integracaoDados from '../../../../assets/section-3/integracao-de-dados.svg'
 import ativosEletricos from '../../../../assets/section-3/ativos-eletricos.svg'
 import comunicacaoInteligente from '../../../../assets/section-3/comunicacao-inteligente.svg'
-import Image from 'next/image'
+
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 export function Section3() {
+  useEffect(() => {
+    Aos.init({ duration: 500, once: true, delay: 150 })
+  }, [])
+
   const datas = [
     {
       id: 1,
@@ -33,7 +43,7 @@ export function Section3() {
   return (
     <Container>
       <section>
-        <AboutColumn>
+        <AboutColumn data-aos="fade-right">
           <h2>OMNI TRAFO</h2>
           <h2>
             <span>
