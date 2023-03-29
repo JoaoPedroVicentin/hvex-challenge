@@ -20,34 +20,42 @@ import supervisaoDeBaixaTensao from '../../../../assets/about-omni/supervisao-de
 export function AboutOmniSection() {
   const datas = [
     {
+      id: 1,
       img: monitoramentoDeTensao,
       title: 'Monitoramento de  tensão, corrente e carga;',
     },
     {
+      id: 2,
       img: analiseDePerda,
       title: 'Análise de perda de vida útil do transformador;',
     },
     {
+      id: 3,
       img: medicaoDoBalanco,
       title: 'Medição do balanço energético de Perdas',
     },
     {
+      id: 4,
       img: deteccaoDeFaltas,
       title: 'Detecção de faltas na rede elétrica',
     },
     {
+      id: 5,
       img: analiseDeFator,
       title: 'Análise de Fator de potência',
     },
     {
+      id: 6,
       img: harmonicasDeCorrente,
       title: 'Harmônicas de corrente e tensão',
     },
     {
+      id: 7,
       img: medicaoDeTemperatura,
       title: 'Medição de temperatura interna',
     },
     {
+      id: 8,
       img: supervisaoDeBaixaTensao,
       title: 'Supervisão de  baixa tensão ',
     },
@@ -74,7 +82,7 @@ export function AboutOmniSection() {
           <InfosOmni>
             {datas.map((data) => {
               return (
-                <div key={data.title}>
+                <div key={data.id}>
                   <span>
                     <Image src={data.img} alt={data.title} />
                   </span>

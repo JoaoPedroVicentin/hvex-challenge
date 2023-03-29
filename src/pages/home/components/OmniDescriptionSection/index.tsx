@@ -9,18 +9,22 @@ import Image from 'next/image'
 export function OmniDescriptionSection() {
   const datas = [
     {
+      id: 1,
       img: sistemaProtecao,
       title: 'Sistema de Proteção',
     },
     {
+      id: 2,
       img: integracaoDados,
       title: 'Integração de Dados',
     },
     {
+      id: 3,
       img: ativosEletricos,
       title: 'Gestão de Ativos Elétricos',
     },
     {
+      id: 4,
       img: comunicacaoInteligente,
       title: 'Comunicação Inteligente',
     },
@@ -48,7 +52,7 @@ export function OmniDescriptionSection() {
         <InfosColumn>
           {datas.map((data) => {
             return (
-              <div key={data.title}>
+              <div key={data.id}>
                 <Image src={data.img} width={100} alt={data.title} />
                 <h5>{data.title}</h5>
               </div>

@@ -6,13 +6,34 @@ import Image from 'next/image'
 
 export function DistributionAssetsSection() {
   const datas = [
-    'Balanço energético',
-    'Auto-diagnóstico dos transformadores',
-    'Medidor ideal para consumidores comerciais industriais',
-    'À prova de fraude',
-    'Melhoria dos Indicadores de Continuidade',
-    'Maior vida útil do ativo',
-    'Acompanhamento em tempo real das condições do equipamento',
+    {
+      id: 1,
+      content: 'Balanço energético',
+    },
+    {
+      id: 2,
+      content: 'Auto-diagnóstico dos transformadores',
+    },
+    {
+      id: 3,
+      content: 'Medidor ideal para consumidores comerciais industriais',
+    },
+    {
+      id: 4,
+      content: 'À prova de fraude',
+    },
+    {
+      id: 5,
+      content: 'Melhoria dos Indicadores de Continuidade',
+    },
+    {
+      id: 6,
+      content: 'Maior vida útil do ativo',
+    },
+    {
+      id: 7,
+      content: 'Acompanhamento em tempo real das condições do equipamento',
+    },
   ]
 
   return (
@@ -26,11 +47,11 @@ export function DistributionAssetsSection() {
           <ul>
             {datas.map((data) => {
               return (
-                <li key={data}>
+                <li key={data.id}>
                   <span>
                     <CheckIcon fontSize="small" />
                   </span>
-                  {data}
+                  {data.content}
                 </li>
               )
             })}

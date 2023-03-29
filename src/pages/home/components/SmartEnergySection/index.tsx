@@ -5,11 +5,22 @@ import Image from 'next/image'
 
 export function SmartEnergySection() {
   const datas = [
-    'Monitoramento inteligente de ativos',
-    'Melhoria dos indicadores de continuidade',
-    'Comunicação Modular',
-    'Business Inteligence',
-    'Redução de Perdas técnicas e Não técnicas',
+    {
+      id: 1,
+      content: 'Monitoramento inteligente de ativos',
+    },
+    {
+      id: 2,
+      content: 'Comunicação Modular',
+    },
+    {
+      id: 3,
+      content: 'Business Inteligence',
+    },
+    {
+      id: 4,
+      content: 'Redução de Perdas técnicas e Não técnicas',
+    },
   ]
 
   return (
@@ -33,11 +44,11 @@ export function SmartEnergySection() {
           <ul>
             {datas.map((data) => {
               return (
-                <li key={data}>
+                <li key={data.id}>
                   <span>
                     <CheckIcon fontSize="small" />
                   </span>
-                  {data}
+                  {data.content}
                 </li>
               )
             })}
