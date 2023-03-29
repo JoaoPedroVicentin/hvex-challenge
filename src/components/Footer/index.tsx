@@ -10,8 +10,6 @@ import {
   SocialMedia,
 } from './styles'
 
-import logo from '../../assets/logo-hvex.svg'
-
 import LinkedInIcon from '@mui/icons-material/LinkedIn'
 import FacebookIcon from '@mui/icons-material/Facebook'
 import InstagramIcon from '@mui/icons-material/Instagram'
@@ -23,7 +21,12 @@ export function Footer() {
       <footer>
         <InfosDiv>
           <Link href="https://hvex.com.br/" target="_blank">
-            <Image src={logo} width={115} alt="Logo Hvex" />
+            <Image
+              src="/assets/logo-hvex.svg"
+              width={115}
+              height={54}
+              alt="Logo Hvex"
+            />
           </Link>
           <Address>
             <h4>Endereço</h4>

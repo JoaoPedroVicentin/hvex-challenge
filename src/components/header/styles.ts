@@ -60,6 +60,11 @@ export const NavigationButton = styled.a`
     color: ${(props) => props.theme.blue};
     filter: brightness(1.2);
   }
+
+  &[aria-checked='true'] {
+    color: ${(props) => props.theme.blue};
+    filter: brightness(1.2);
+  }
 `
 
 export const DropdownMenuTrigger = styled(DropdownMenu.Trigger)`

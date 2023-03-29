@@ -1,4 +1,6 @@
+import Link from 'next/link'
 import Image from 'next/image'
+
 import {
   DropdownMenuTrigger,
   HeaderContainer,
@@ -6,24 +8,29 @@ import {
   IconButton,
   DropdownMenuContent,
 } from './styles'
-import * as DropdownMenu from '@radix-ui/react-dropdown-menu'
+
 import MenuIcon from '@mui/icons-material/Menu'
 
-import logo from '../../assets/logo-hvex.svg'
+import * as DropdownMenu from '@radix-ui/react-dropdown-menu'
+
 import { Button } from '../Button'
-import Link from 'next/link'
 
 export function Header() {
   return (
     <HeaderContainer>
       <nav>
         <Link href="https://hvex.com.br/" target="_blank">
-          <Image src={logo} width={115} alt="Logo Hvex" />
+          <Image
+            src="/assets/logo-hvex.svg"
+            width={115}
+            height={54}
+            alt="Logo Hvex"
+          />
         </Link>
 
         <ul>
           <li>
-            <NavigationButton>Omni trafo</NavigationButton>
+            <NavigationButton aria-checked="true">Omni trafo</NavigationButton>
           </li>
           <li>
             <NavigationButton>Sinalizador de faltas</NavigationButton>
