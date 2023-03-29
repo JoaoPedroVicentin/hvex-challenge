@@ -66,6 +66,12 @@ export const InfosColumn = styled.div`
       margin-top: 0;
       width: auto;
     }
+
+    transition: all 0.3s ease;
+
+    &:hover {
+      filter: brightness(1.2);
+    }
   }
 
   h1 {

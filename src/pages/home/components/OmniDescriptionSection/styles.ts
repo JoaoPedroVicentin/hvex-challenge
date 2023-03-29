@@ -81,6 +81,14 @@ export const InfosColumn = styled.div`
 
     text-align: center;
 
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: scale(1.05);
+
+      box-shadow: inset 0 0 12px #14fff1, 0 0 12px #14fff1;
+    }
+
     h3 {
       color: ${(props) => props.theme.blueLight};
 

@@ -54,9 +54,11 @@ export const NavigationButton = styled.a`
   color: ${(props) => props.theme.whiteLight};
   text-decoration: none;
 
-  &:focus,
+  transition: all 0.3s ease;
+
   &:hover {
     color: ${(props) => props.theme.blue};
+    filter: brightness(1.2);
   }
 `
 

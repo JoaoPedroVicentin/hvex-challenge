@@ -7,8 +7,11 @@ export const ButtonContainer = styled.a`
   border-radius: 5px;
   padding: 0.75rem 1.5rem;
 
+  transition: all 0.3s ease;
+
   &:hover {
     background-color: ${(props) => props.theme.blue};
     color: ${(props) => props.theme.whiteLight};
+    filter: brightness(1.2);
   }
 `

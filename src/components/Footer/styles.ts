@@ -86,6 +86,13 @@ export const SocialMedia = styled.div`
       justify-content: center;
 
       border-radius: 50%;
+
+      transition: all 0.3s ease;
+
+      &:hover {
+        transform: scale(1.2);
+        filter: brightness(1.2);
+      }
     }
 
     @media (max-width: 1215px) {

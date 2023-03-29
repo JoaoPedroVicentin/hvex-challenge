@@ -109,9 +109,17 @@ export const InfosOmni = styled.div`
 
       padding: 1rem;
 
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
       img {
         width: 100%;
         aspect-ratio: 1/1;
+      }
+
+      transition: all 0.3s ease;
+
+      &:hover {
+        transform: translateY(-15%);
       }
     }
 
