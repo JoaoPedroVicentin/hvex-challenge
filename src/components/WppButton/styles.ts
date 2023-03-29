@@ -31,5 +31,7 @@ export const WppButtonContainer = styled.a`
   @media (max-width: 768px) {
     margin-right: 1.5rem;
     margin-bottom: 1.5rem;
+
+    padding: 0.5rem;
   }
 `
