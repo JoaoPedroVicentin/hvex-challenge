@@ -32,7 +32,19 @@ export const GlobalStyle = createGlobalStyle`
     body{
         background-color: #fdfdfd;
         font-family: Inter, sans-serif;
+
+        -webkit-font-smoothing: antialiased;
+
+    &::-webkit-scrollbar {
+      width: 7px;
+      background-color: #F4F4F4;
     }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #1C2C44;
+    }
+  }
+    
     button, a{
         cursor: pointer;
     }
