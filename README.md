@@ -96,15 +96,44 @@
 
 <h2>💻 Rodando o projeto</h2>
 
+<h3>Instalações necessárias</h3>
+<li>Npm</li>
+<li>Node</li>
+<li>Git</li>
+<li>Docker (opcional)</li>
+
+<br/>
+
 ```bash
 #Clone este repositório
 $ git clone https://github.com/JoaoPedroVicentin/h_v_e_x-challenge.git
+```
 
+<br/>
+
+<h3>Rodando o projeto com npm</h3>
+
+```bash
 #Instale as dependências
 $ npm i
 
 #Execute a aplicação em modo de desenvolvimento
 $ npm run dev
+```
+
+<br/>
+
+<h3>Rodando o projeto com Docker</h3>
+
+```bash
+#Baixe as bibliotecas e compile o projeto
+$ docker build -t hvex-challenge ./
+
+#Execute a aplicação
+$ docker run -p 3000:3000 hvex-challenge
+
+#Importante!
+#Garanta que não exista outro serviço sendo executado na porta 3000
 ```
 
 <br/>
