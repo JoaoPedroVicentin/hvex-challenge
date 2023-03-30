@@ -53,7 +53,9 @@ export function Header() {
           <DropdownMenu.Portal>
             <DropdownMenuContent sideOffset={4}>
               <DropdownMenu.Item>
-                <NavigationButton>Omni trafo</NavigationButton>
+                <NavigationButton aria-checked="true">
+                  Omni trafo
+                </NavigationButton>
               </DropdownMenu.Item>
               <DropdownMenu.Item>
                 <NavigationButton>Sinalizador de faltas</NavigationButton>

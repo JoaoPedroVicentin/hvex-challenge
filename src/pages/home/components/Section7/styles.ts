@@ -135,7 +135,7 @@ export const AccordionContent = styled(Accordion.Content)`
 
   h5 {
     @media (max-width: 425px) {
-      font-size: 0.75rem;
+      font-size: 0.85rem;
     }
   }
 `

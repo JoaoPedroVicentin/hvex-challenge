@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 import * as DropdownMenu from '@radix-ui/react-dropdown-menu'
 
 export const HeaderContainer = styled.header`
@@ -67,6 +67,26 @@ export const NavigationButton = styled.a`
   }
 `
 
+const slideUpAndFade = keyframes`
+  0% { opacity: 0; transform: translateY(2px) }
+  100% { opacity: 1; transform: translateY(0) }
+`
+
+const slideRightAndFade = keyframes`
+  0% { opacity: 0; transform: translateX(-2px) }
+  100% { opacity: 1; transform: translateX(0) }
+`
+
+const slideDownAndFade = keyframes`
+  0% { opacity: 0; transform: translateY(-2px) }
+  100% { opacity: 1; transform: translateY(0) }
+`
+
+const slideLeftAndFade = keyframes`
+  0% { opacity: 0; transform: translateX(2px) }
+  100% { opacity: 1; transform: translateX(0) }
+`
+
 export const DropdownMenuTrigger = styled(DropdownMenu.Trigger)`
   display: none;
 
@@ -89,22 +109,49 @@ export const IconButton = styled.button`
   }
 `
 export const DropdownMenuContent = styled(DropdownMenu.Content)`
+  background-color: #252835;
+  color: ${(props) => props.theme.whiteLight};
+
+  width: 100vw;
+
   display: none;
+  flex-direction: column;
+
+  justify-content: center;
+  gap: 2rem;
+
   z-index: 10;
 
-  background-color: #252835;
   margin-top: 1.55rem;
-  color: ${(props) => props.theme.whiteLight};
-  padding: 1.25rem 1rem 2rem;
+  padding: 1.25rem 2.5rem 2rem;
+
   border: 1px solid ${(props) => props.theme.grayDark};
-  width: 13rem;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 1.5rem;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  animation-duration: 500ms;
+  animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform, opacity;
+
+  &[data-state='open'] {
+    &[data-side='top'] {
+      animation-name: ${slideDownAndFade};
+    }
+    &[data-side='right'] {
+      animation-name: ${slideLeftAndFade};
+    }
+    &[data-side='bottom'] {
+      animation-name: ${slideUpAndFade};
+    }
+    &[data-side='left'] {
+      animation-name: ${slideRightAndFade};
+    }
+  }
 
   @media (max-width: 768px) {
     display: flex;
+  }
+
+  @media (max-width: 445px) {
+    padding: 1.25rem 1rem 2rem;
   }
 `
