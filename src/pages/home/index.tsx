@@ -1,6 +1,6 @@
 import { NextSeo } from 'next-seo'
-import { Footer } from '../../components/Footer'
-import { Header } from '../../components/Header'
+import { HeaderSection } from '../../components/Header'
+import { FooterSection } from '../../components/Footer'
 import { WppButton } from '../../components/WppButton'
 
 import { Section1 } from './components/Section1'
@@ -18,7 +18,7 @@ export default function Home() {
         title="HVEX | Omni Trafo"
         description="Tenha Informações em tempo real das condições dos ativos e com o monitoramento inteligente"
       />
-      <Header />
+      <HeaderSection />
       <Section1 />
       <Section2 />
       <Section3 />
@@ -26,7 +26,7 @@ export default function Home() {
       <Section5 />
       <Section6 />
       <Section7 />
-      <Footer />
+      <FooterSection />
       <WppButton />
     </>
   )

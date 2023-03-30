@@ -15,7 +15,7 @@ import * as DropdownMenu from '@radix-ui/react-dropdown-menu'
 
 import { Button } from '../Button'
 
-export function Header() {
+export function HeaderSection() {
   return (
     <HeaderContainer>
       <nav>

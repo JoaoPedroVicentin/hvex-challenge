@@ -15,7 +15,7 @@ import FacebookIcon from '@mui/icons-material/Facebook'
 import InstagramIcon from '@mui/icons-material/Instagram'
 import YouTubeIcon from '@mui/icons-material/YouTube'
 
-export function Footer() {
+export function FooterSection() {
   return (
     <FooterContainer>
       <footer>
