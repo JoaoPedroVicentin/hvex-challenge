@@ -41,7 +41,6 @@ export function Section2() {
             width={553}
             height={681}
             src="/assets/section-2/smart-energy.png"
-            quality={100}
             alt="Ilustrations about smart energy"
           />
         </ImageColumn>
