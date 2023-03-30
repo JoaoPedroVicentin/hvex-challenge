@@ -3,15 +3,17 @@
 <h2><a href="https://h-v-e-x-challenge.vercel.app/" target="_blank">🌍 Deploy do projeto</a>
 </h2>
 
-<br>
+<br/>
 
 <div align="center">
     <img src=".\src\assets\banner-hvex.png" width="100%" />
     <img src=".\src\assets\hvex-challenge-gif.gif" width="100%" />
-    <h3 align="center">O projeto feito é a  resolução do desafio proposto para a vaga de <strong>Desenvolvedor e Analista Frontend JR na HVEX</strong>, ele consiste em uma landing page responsiva de um produto.</h3>
 </div>
 
-<br>
+<br/>
+<h3>O projeto feito é a  resolução do desafio proposto para a vaga de <strong>Desenvolvedor e Analista Frontend JR na HVEX</strong>, ele consiste em uma landing page responsiva de um produto.</h3>
+
+<br/>
 
 <h2>📝 Desafios propostos no teste:</h2>
 
@@ -23,11 +25,11 @@
 - [x] Código rodando no Docker.
 - [x] Animações.
 
-<br>
+<br/>
 
 <h2>🛠️ Tecnologias utilizadas</h2>
 
-<table>
+<table width='100%'>
     <tr>
         <td><strong>Código</strong></td>
         <td>React</td>
@@ -64,6 +66,13 @@
         <td></td>
     </tr>
     <tr>
+        <td><strong>SEO</strong></td>
+        <td>NextSeo</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
         <td><strong>Deploy</strong></td>
         <td>Vercel</td>
         <td></td>
@@ -72,7 +81,20 @@
     </tr>
 </table>
 
+<br/>
+
+<h2>🚨 Lighthouse</h2>
+
+<h3>Versão desktop</h3>
+<img src=".\src\assets\lighthouse-desktop.png" width="100%" />
+
+<br/>
+
+<h3>Versão mobile</h3>
+<img src=".\src\assets\lighthouse-mobile.png" width="100%" />
 <br>
+
+<h2>💻 Rodando o projeto</h2>
 
 ```bash
 #Clone este repositório
@@ -85,11 +107,13 @@ $ npm i
 $ npm run dev
 ```
 
-<br>
+<br/>
 
 <div align="center">
-    <h3>👨‍💻 Criado por João Pedro Vicentin! Meus contatos:</h3>
+<h3>👨‍💻</h3>
+    <h3> Criado por João Pedro Vicentin!</h3>
     <div>
+    <br/>
         <h3>
             <a href="https://www.linkedin.com/in/joaopedrovicentin/" target="_blank">Linkedin</a>
             <a href='https://github.com/JoaoPedroVicentin' target='_blank'>Github</a>
