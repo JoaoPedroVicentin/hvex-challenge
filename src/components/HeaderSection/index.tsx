@@ -49,7 +49,12 @@ export function HeaderSection() {
 
         {/* Menu versão mobile utilizando componente DropdownMenu do Radix */}
         <DropdownMenu.Root>
-          <DropdownMenuTrigger id="mobile" name="menu-mobile" asChild>
+          <DropdownMenuTrigger
+            id="mobile"
+            title="menu-mobile"
+            name="menu-mobile"
+            asChild
+          >
             <IconButton>
               <MenuIcon fontSize="large" />
             </IconButton>
