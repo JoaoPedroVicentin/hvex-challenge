@@ -12,6 +12,5 @@ export const ButtonContainer = styled.a`
   &:hover {
     background-color: ${(props) => props.theme.blue};
     color: ${(props) => props.theme.whiteLight};
-    filter: brightness(1.2);
   }
 `

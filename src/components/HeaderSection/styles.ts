@@ -58,12 +58,10 @@ export const NavigationButton = styled.a`
 
   &:hover {
     color: ${(props) => props.theme.blue};
-    filter: brightness(1.2);
   }
 
   &[aria-checked='true'] {
     color: ${(props) => props.theme.blue};
-    filter: brightness(1.2);
   }
 `
 

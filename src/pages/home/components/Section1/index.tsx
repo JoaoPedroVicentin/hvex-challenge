@@ -21,7 +21,7 @@ export function Section1() {
             seu funcionamento, prevendo a vida útil dos ativos e aferindo perdas
             técnicas e não técnicas.
           </h4>
-          <Link href="">Quero mais informações</Link>
+          <Link href="/">Quero mais informações</Link>
         </InfosColumn>
         <ImageColumn>
           <Image

@@ -70,7 +70,7 @@ export const InfosColumn = styled.div`
     transition: all 0.3s ease;
 
     &:hover {
-      filter: brightness(1.2);
+      background-color: transparent;
     }
   }
 

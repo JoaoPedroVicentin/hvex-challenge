@@ -3,7 +3,7 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp'
 
 export function WppButton() {
   return (
-    <WppButtonContainer href="">
+    <WppButtonContainer href="/">
       <WhatsAppIcon fontSize="large" />
     </WppButtonContainer>
   )

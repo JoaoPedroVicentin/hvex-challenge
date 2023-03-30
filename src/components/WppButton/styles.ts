@@ -25,7 +25,6 @@ export const WppButtonContainer = styled.a`
 
   &:hover {
     transform: scale(1.2);
-    filter: brightness(1.2);
   }
 
   @media (max-width: 768px) {
