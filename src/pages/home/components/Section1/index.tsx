@@ -1,22 +1,15 @@
-import { useEffect } from 'react'
-
 import Image from 'next/image'
 import Link from 'next/link'
 
 import { Container, InfosColumn, ImageColumn } from './styles'
 
-import Aos from 'aos'
 import 'aos/dist/aos.css'
 
 export function Section1() {
-  useEffect(() => {
-    Aos.init({ duration: 500, once: true, delay: 150 })
-  }, [])
-
   return (
     <Container>
       <section>
-        <InfosColumn data-aos="fade-right">
+        <InfosColumn>
           <h1>
             Tenha Informações em tempo real das condições dos ativos e com o
             monitoramento inteligente
@@ -35,7 +28,6 @@ export function Section1() {
             src="/assets/section-1/omni-trafo.png"
             width={568}
             height={817}
-            quality={100}
             priority
             alt="Omni Trafo"
           />
