@@ -1,9 +1,9 @@
 import { render, screen } from '@testing-library/react'
-import { Header } from '.'
+import { HeaderSection } from '.'
 
 describe('Header component', () => {
   it('renders correctly', () => {
-    render(<Header />)
+    render(<HeaderSection />)
 
     expect(screen.getByText('Omni trafo')).toBeInTheDocument()
     expect(screen.getByText('Sinalizador de faltas')).toBeInTheDocument()

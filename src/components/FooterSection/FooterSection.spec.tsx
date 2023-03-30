@@ -1,9 +1,9 @@
 import { render, screen } from '@testing-library/react'
-import { Footer } from '.'
+import { FooterSection } from '.'
 
 describe('Footer component', () => {
   it('renders correctly', () => {
-    render(<Footer />)
+    render(<FooterSection />)
 
     expect(screen.getByText('Endereço')).toBeInTheDocument()
     expect(screen.getByText('Contato')).toBeInTheDocument()

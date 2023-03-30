@@ -1,6 +1,6 @@
 import { NextSeo } from 'next-seo'
-import { HeaderSection } from '../../components/Header'
-import { FooterSection } from '../../components/Footer'
+import { HeaderSection } from '../../components/HeaderSection'
+import { FooterSection } from '../../components/FooterSection'
 import { WppButton } from '../../components/WppButton'
 
 import { Section1 } from './components/Section1'
