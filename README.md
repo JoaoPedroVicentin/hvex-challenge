@@ -123,7 +123,7 @@ $ npm run dev
 
 <br/>
 
-<h3>Rodando o projeto com Docker</h3>
+<h3>Rodando o projeto com docker</h3>
 
 ```bash
 #Baixe as bibliotecas e compile o projeto
