@@ -28,8 +28,8 @@ export function Section1() {
         <ImageColumn>
           <Image
             src="/assets/section-1/omni-trafo.png"
-            width={568}
-            height={817}
+            width={425}
+            height={611}
             priority
             alt="Omni Trafo"
           />
