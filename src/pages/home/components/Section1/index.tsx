@@ -5,8 +5,6 @@ import Link from 'next/link'
 
 import { Container, InfosColumn, ImageColumn } from './styles'
 
-import omniTrafo from '../../../../assets/section-1/omni-trafo.png'
-
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 
@@ -33,7 +31,14 @@ export function Section1() {
           <Link href="">Quero mais informações</Link>
         </InfosColumn>
         <ImageColumn>
-          <Image src={omniTrafo} quality={100} priority alt="Omni Trafo" />
+          <Image
+            src="/assets/section-1/omni-trafo.png"
+            width={568}
+            height={817}
+            quality={100}
+            priority
+            alt="Omni Trafo"
+          />
         </ImageColumn>
       </section>
     </Container>

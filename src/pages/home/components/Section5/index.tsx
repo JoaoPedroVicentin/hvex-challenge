@@ -4,8 +4,6 @@ import Image from 'next/image'
 
 import { Container, ImageColumn, InfosColumn } from './styles'
 
-import ativosDeDistribuicao from '../../../../assets/section-5/ativos-de-distribuicao.png'
-
 import CheckIcon from '@mui/icons-material/Check'
 
 import Aos from 'aos'
@@ -69,7 +67,12 @@ export function Section5() {
           </ul>
         </InfosColumn>
         <ImageColumn>
-          <Image src={ativosDeDistribuicao} alt="Ativos de distribuição" />
+          <Image
+            src="/assets/section-5/ativos-de-distribuicao.png"
+            width={851}
+            height={879}
+            alt="Ativos de distribuição"
+          />
         </ImageColumn>
       </section>
     </Container>

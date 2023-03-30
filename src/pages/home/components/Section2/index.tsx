@@ -4,8 +4,6 @@ import Image from 'next/image'
 
 import { ImageColumn, InfosColumn, Container } from './styles'
 
-import inteligentEnergy from '../../../../assets/section-2/inteligent-energy.png'
-
 import CheckIcon from '@mui/icons-material/Check'
 
 import Aos from 'aos'
@@ -40,9 +38,11 @@ export function Section2() {
       <section>
         <ImageColumn>
           <Image
-            src={inteligentEnergy}
+            width={553}
+            height={681}
+            src="/assets/section-2/smart-energy.png"
             quality={100}
-            alt="Ilustrations about inteligent energy"
+            alt="Ilustrations about smart energy"
           />
         </ImageColumn>
         <InfosColumn data-aos="fade-right">

@@ -10,16 +10,6 @@ import {
   Title,
 } from './styles'
 
-import omniTrafo2 from '../../../../assets/section-4/omni-trafo-2.png'
-import monitoramentoDeTensao from '../../../../assets/section-4/monitoramento-de-tensao.svg'
-import analiseDePerda from '../../../../assets/section-4/analise-de-perda.svg'
-import medicaoDoBalanco from '../../../../assets/section-4/medicao-do-balanco.svg'
-import deteccaoDeFaltas from '../../../../assets/section-4/deteccao-de-faltas.svg'
-import analiseDeFator from '../../../../assets/section-4/analise-de-fator.svg'
-import harmonicasDeCorrente from '../../../../assets/section-4/harmonicas-de-corrente.svg'
-import medicaoDeTemperatura from '../../../../assets/section-4/medicao-de-temperatura.svg'
-import supervisaoDeBaixaTensao from '../../../../assets/section-4/supervisao-de-baixa-tensao.svg'
-
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 
@@ -31,42 +21,42 @@ export function Section4() {
   const datas = [
     {
       id: 1,
-      img: monitoramentoDeTensao,
+      img: '/assets/section-4/monitoramento-de-tensao.svg',
       title: 'Monitoramento de  tensão, corrente e carga;',
     },
     {
       id: 2,
-      img: analiseDePerda,
+      img: '/assets/section-4/analise-de-perda.svg',
       title: 'Análise de perda de vida útil do transformador;',
     },
     {
       id: 3,
-      img: medicaoDoBalanco,
+      img: '/assets/section-4/medicao-do-balanco.svg',
       title: 'Medição do balanço energético de Perdas',
     },
     {
       id: 4,
-      img: deteccaoDeFaltas,
+      img: '/assets/section-4/deteccao-de-faltas.svg',
       title: 'Detecção de faltas na rede elétrica',
     },
     {
       id: 5,
-      img: analiseDeFator,
+      img: '/assets/section-4/analise-de-fator.svg',
       title: 'Análise de Fator de potência',
     },
     {
       id: 6,
-      img: harmonicasDeCorrente,
+      img: '/assets/section-4/harmonicas-de-corrente.svg',
       title: 'Harmônicas de corrente e tensão',
     },
     {
       id: 7,
-      img: medicaoDeTemperatura,
+      img: '/assets/section-4/medicao-de-temperatura.svg',
       title: 'Medição de temperatura interna',
     },
     {
       id: 8,
-      img: supervisaoDeBaixaTensao,
+      img: '/assets/section-4/supervisao-de-baixa-tensao.svg',
       title: 'Supervisão de  baixa tensão ',
     },
   ]
@@ -75,7 +65,12 @@ export function Section4() {
     <Container>
       <section>
         <ImageColumn>
-          <Image src={omniTrafo2} alt="Omni trafo 2" />
+          <Image
+            src="/assets/section-4/omni-trafo-2.png"
+            width={541}
+            height={778}
+            alt="Omni trafo 2"
+          />
         </ImageColumn>
 
         <AboutOmniColumn>
@@ -98,7 +93,12 @@ export function Section4() {
                   data-aos-delay={data.id * 100}
                 >
                   <span>
-                    <Image src={data.img} alt={data.title} />
+                    <Image
+                      src={data.img}
+                      width={40}
+                      height={40}
+                      alt={data.title}
+                    />
                   </span>
                   <h5>{data.title}</h5>
                 </div>
