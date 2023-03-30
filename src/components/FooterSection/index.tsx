@@ -45,21 +45,28 @@ export function FooterSection() {
 
             <div>
               <Link
+                title="linkedin"
                 href="https://www.linkedin.com/company/hvexoficial/"
                 target="_blank"
               >
                 <LinkedInIcon />
               </Link>
-              <Link href="https://www.facebook.com/HVEX.MG" target="_blank">
+              <Link
+                title="facebook"
+                href="https://www.facebook.com/HVEX.MG"
+                target="_blank"
+              >
                 <FacebookIcon />
               </Link>
               <Link
+                title="instagram"
                 href="https://www.instagram.com/hvex_oficial/"
                 target="_blank"
               >
                 <InstagramIcon />
               </Link>
               <Link
+                title="youtube"
                 href="https://www.youtube.com/channel/UCK5Z6eCnlYHVkHijYzb1Iow"
                 target="_blank"
               >

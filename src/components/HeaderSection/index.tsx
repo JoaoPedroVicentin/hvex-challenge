@@ -30,13 +30,15 @@ export function HeaderSection() {
 
         <ul>
           <li>
-            <NavigationButton aria-checked="true">Omni trafo</NavigationButton>
+            <NavigationButton href="" aria-checked="true">
+              Omni trafo
+            </NavigationButton>
           </li>
           <li>
-            <NavigationButton>Sinalizador de faltas</NavigationButton>
+            <NavigationButton href="">Sinalizador de faltas</NavigationButton>
           </li>
           <li>
-            <NavigationButton>Acoplador DP</NavigationButton>
+            <NavigationButton href="">Acoplador DP</NavigationButton>
           </li>
           <li>
             <Button content="Comprar agora" />
@@ -44,7 +46,7 @@ export function HeaderSection() {
         </ul>
 
         <DropdownMenu.Root>
-          <DropdownMenuTrigger asChild>
+          <DropdownMenuTrigger name="menu-mobile" asChild>
             <IconButton>
               <MenuIcon fontSize="large" />
             </IconButton>
@@ -53,15 +55,17 @@ export function HeaderSection() {
           <DropdownMenu.Portal>
             <DropdownMenuContent sideOffset={4}>
               <DropdownMenu.Item>
-                <NavigationButton aria-checked="true">
+                <NavigationButton href="" aria-checked="true">
                   Omni trafo
                 </NavigationButton>
               </DropdownMenu.Item>
               <DropdownMenu.Item>
-                <NavigationButton>Sinalizador de faltas</NavigationButton>
+                <NavigationButton href="">
+                  Sinalizador de faltas
+                </NavigationButton>
               </DropdownMenu.Item>
               <DropdownMenu.Item>
-                <NavigationButton>Acoplador DP</NavigationButton>
+                <NavigationButton href="">Acoplador DP</NavigationButton>
               </DropdownMenu.Item>
               <DropdownMenu.Item>
                 <Button content="Comprar agora" />

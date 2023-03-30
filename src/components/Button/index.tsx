@@ -5,5 +5,5 @@ interface ButtonProps {
 }
 
 export function Button({ content }: ButtonProps) {
-  return <ButtonContainer>{content}</ButtonContainer>
+  return <ButtonContainer href="">{content}</ButtonContainer>
 }
