@@ -7,10 +7,11 @@ export const Container = styled.section`
 
   section {
     max-width: 1440px;
-    margin: 0 auto;
 
     display: grid;
     grid-template-columns: 1fr 1fr;
+
+    margin: 0 auto;
 
     @media (max-width: 900px) {
       grid-template-columns: 1fr;
@@ -37,14 +38,18 @@ export const InfosColumn = styled.div`
 
     &::after {
       content: '';
-      background-color: ${(props) => props.theme.blue};
+
       width: 11rem;
       height: 0.25rem;
 
+      background-color: ${(props) => props.theme.blue};
+
       left: 0;
       bottom: 0;
-      margin-bottom: -2rem;
+
       position: absolute;
+
+      margin-bottom: -2rem;
 
       @media (max-width: 595px) {
         margin-bottom: -1.5rem;
@@ -60,15 +65,20 @@ export const InfosColumn = styled.div`
     display: flex;
     flex-direction: column;
     gap: 2rem;
+
     list-style: none;
 
     li {
-      font-weight: 700;
       display: flex;
       align-items: center;
       gap: 1rem;
 
+      font-weight: 700;
+
       span {
+        width: 1.5rem;
+        height: 1.5rem;
+
         background-color: ${(props) => props.theme.grayDark};
         color: ${(props) => props.theme.whiteLight};
 
@@ -76,8 +86,6 @@ export const InfosColumn = styled.div`
         align-items: center;
         justify-content: center;
 
-        width: 1.5rem;
-        height: 1.5rem;
         border-radius: 50%;
 
         @media (max-width: 445px) {

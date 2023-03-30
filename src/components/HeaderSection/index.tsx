@@ -7,6 +7,7 @@ import {
   NavigationButton,
   IconButton,
   DropdownMenuContent,
+  DropdownMenuItem,
 } from './styles'
 
 import MenuIcon from '@mui/icons-material/Menu'
@@ -28,6 +29,7 @@ export function HeaderSection() {
           />
         </Link>
 
+        {/* Menu versão desktop */}
         <ul>
           <li>
             <NavigationButton href="/" aria-checked="true">
@@ -45,6 +47,7 @@ export function HeaderSection() {
           </li>
         </ul>
 
+        {/* Menu versão mobile utilizando componente DropdownMenu do Radix */}
         <DropdownMenu.Root>
           <DropdownMenuTrigger id="mobile" name="menu-mobile" asChild>
             <IconButton>
@@ -54,22 +57,25 @@ export function HeaderSection() {
 
           <DropdownMenu.Portal>
             <DropdownMenuContent sideOffset={4}>
-              <DropdownMenu.Item>
+              <DropdownMenuItem>
                 <NavigationButton href="/" aria-checked="true">
                   Omni trafo
                 </NavigationButton>
-              </DropdownMenu.Item>
-              <DropdownMenu.Item>
+              </DropdownMenuItem>
+
+              <DropdownMenuItem>
                 <NavigationButton href="/">
                   Sinalizador de faltas
                 </NavigationButton>
-              </DropdownMenu.Item>
-              <DropdownMenu.Item>
+              </DropdownMenuItem>
+
+              <DropdownMenuItem>
                 <NavigationButton href="/">Acoplador DP</NavigationButton>
-              </DropdownMenu.Item>
-              <DropdownMenu.Item>
+              </DropdownMenuItem>
+
+              <DropdownMenuItem>
                 <Button content="Comprar agora" />
-              </DropdownMenu.Item>
+              </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu.Portal>
         </DropdownMenu.Root>

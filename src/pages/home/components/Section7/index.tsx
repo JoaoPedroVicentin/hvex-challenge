@@ -8,7 +8,10 @@ import {
   Container,
 } from './styles'
 
+// Section - Perguntas Frequentes
+
 export function Section7() {
+  // Armazenando lista da section em um array
   const datas = [
     {
       id: 1,
@@ -46,8 +49,10 @@ export function Section7() {
         <h2>Perguntas Frequentes</h2>
 
         <AccordionRoot type="multiple">
+          {/* Listando os dados da lista da section */}
           {datas.map((data) => {
             return (
+              // Div das pergunta utilizando componente Accordion do Radix
               <AccordionItem key={data.id} value={`${data.id}`}>
                 <AccordionHeader>
                   <AccordionTrigger>

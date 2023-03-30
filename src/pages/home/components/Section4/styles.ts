@@ -5,11 +5,12 @@ export const Container = styled.section`
 
   section {
     max-width: 1440px;
-    margin: 0 auto;
 
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     gap: 3rem;
+
+    margin: 0 auto;
 
     @media (max-width: 900px) {
       grid-template-columns: 1fr;
@@ -69,15 +70,19 @@ export const AboutOmniColumn = styled.div`
 
 export const Title = styled.div`
   color: ${(props) => props.theme.grayDark};
+
   position: relative;
 
   &::after {
     content: '';
-    background-color: ${(props) => props.theme.blue};
+
     width: 11rem;
     height: 0.25rem;
 
+    background-color: ${(props) => props.theme.blue};
+
     bottom: 0;
+
     margin-bottom: -1rem;
     position: absolute;
   }
@@ -101,13 +106,13 @@ export const InfosOmni = styled.div`
     span {
       background-color: ${(props) => props.theme.grayDark};
 
-      border-radius: 50%;
-
       display: flex;
       align-items: center;
       justify-content: center;
 
       padding: 1rem;
+
+      border-radius: 50%;
 
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 

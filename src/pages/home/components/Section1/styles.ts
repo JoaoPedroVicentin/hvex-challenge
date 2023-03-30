@@ -37,13 +37,14 @@ export const Container = styled.section`
   }
 `
 export const InfosColumn = styled.div`
-  z-index: 1;
   display: flex;
   justify-content: center;
   flex-direction: column;
   gap: 2rem;
 
   margin-right: -15%;
+
+  z-index: 1;
 
   a {
     width: 15rem;
@@ -56,11 +57,11 @@ export const InfosColumn = styled.div`
     justify-content: center;
 
     margin-top: 2rem;
+    padding: 0.75rem 1rem;
 
-    text-decoration: none;
     border: 1px solid ${(props) => props.theme.blue};
     border-radius: 5px;
-    padding: 0.75rem 1rem;
+    text-decoration: none;
 
     @media (max-width: 620px) {
       margin-top: 0;

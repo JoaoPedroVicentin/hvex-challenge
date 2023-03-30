@@ -50,6 +50,14 @@ const slideUp = keyframes`
     to { height: 0 }
   `
 
+export const Arrow = styled(KeyboardArrowDownIcon)`
+  transition: transform 300ms cubic-bezier(0.87, 0, 0.13, 1);
+
+  @media (max-width: 445px) {
+    margin: 1rem 0;
+  }
+`
+
 export const AccordionRoot = styled(Accordion.Root)`
   width: 100%;
 
@@ -78,6 +86,10 @@ export const AccordionItem = styled(Accordion.Item)`
   @media (max-width: 585px) {
     width: 100%;
   }
+
+  @media (max-width: 445px) {
+    padding: 1rem;
+  }
 `
 export const AccordionHeader = styled(Accordion.Header)`
   margin-bottom: 1rem;
@@ -95,6 +107,10 @@ export const AccordionTrigger = styled(Accordion.Trigger)`
   border: none;
   border-bottom: 1px solid #d9d9d9;
 
+  &[data-state='open'] ${Arrow} {
+    transform: rotate(180deg);
+  }
+
   h5 {
     text-align: start;
     font-size: 1rem;
@@ -102,10 +118,6 @@ export const AccordionTrigger = styled(Accordion.Trigger)`
     line-height: 155%;
 
     padding: 1rem 0;
-
-    @media (max-width: 445px) {
-      padding: 0;
-    }
   }
 
   @media (max-width: 1115px) {
@@ -113,8 +125,7 @@ export const AccordionTrigger = styled(Accordion.Trigger)`
   }
 
   @media (max-width: 445px) {
-    flex-direction: column;
-    gap: 0;
+    gap: 0.5rem;
   }
 `
 
@@ -137,16 +148,5 @@ export const AccordionContent = styled(Accordion.Content)`
     @media (max-width: 425px) {
       font-size: 0.85rem;
     }
-  }
-`
-export const Arrow = styled(KeyboardArrowDownIcon)`
-  transition: transform 300ms cubic-bezier(0.87, 0, 0.13, 1);
-
-  [data-state='open'] & {
-    transform: rotate(180deg);
-  }
-
-  @media (max-width: 445px) {
-    margin: 1rem 0;
   }
 `

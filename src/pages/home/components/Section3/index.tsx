@@ -7,11 +7,15 @@ import { AboutColumn, InfosColumn, Container } from './styles'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 
+// Section - É o dispositivo capaz de integrar os transformadores as redes inteligentes
+
 export function Section3() {
+  // Iniciando aos para ativar as animações
   useEffect(() => {
     Aos.init({ duration: 500, once: true, delay: 150 })
   }, [])
 
+  // Armazenando lista da section em um array
   const datas = [
     {
       id: 1,
@@ -54,7 +58,9 @@ export function Section3() {
             útil dos ativos e aferindo perdas técnicas e não técnicas.
           </h4>
         </AboutColumn>
+
         <InfosColumn>
+          {/* Listando os dados da lista da section */}
           {datas.map((data) => {
             return (
               <div key={data.id}>

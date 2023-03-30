@@ -1,8 +1,9 @@
 import styled from 'styled-components'
 
 export const Container = styled.section`
-  padding: 7rem 5rem;
   background-color: ${(props) => props.theme.whiteLight};
+
+  padding: 7rem 5rem;
 
   position: relative;
   z-index: 2;
@@ -45,10 +46,8 @@ export const Container = styled.section`
 
 export const InfosColumn = styled.div`
   display: flex;
-  flex-direction: column;
-
   justify-content: center;
-
+  flex-direction: column;
   gap: 3rem;
 
   h2 {
@@ -63,15 +62,20 @@ export const InfosColumn = styled.div`
     display: flex;
     flex-direction: column;
     gap: 2rem;
+
     list-style: none;
 
     li {
-      font-weight: 700;
       display: flex;
       align-items: center;
       gap: 1rem;
 
+      font-weight: 700;
+
       span {
+        width: 1.5rem;
+        height: 1.5rem;
+
         background-color: ${(props) => props.theme.blueDark};
         color: ${(props) => props.theme.whiteLight};
 
@@ -79,8 +83,6 @@ export const InfosColumn = styled.div`
         align-items: center;
         justify-content: center;
 
-        width: 1.5rem;
-        height: 1.5rem;
         border-radius: 50%;
 
         @media (max-width: 445px) {
@@ -90,8 +92,9 @@ export const InfosColumn = styled.div`
       }
 
       @media (max-width: 445px) {
-        font-size: 0.75rem;
         gap: 0.75rem;
+
+        font-size: 0.75rem;
       }
     }
 

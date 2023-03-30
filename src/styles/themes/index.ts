@@ -1,3 +1,4 @@
+// Configurando paleta de cores da aplicação
 export const defaultTheme = {
   blue: '#00B6DE',
   blueLight: '#52E0FF',

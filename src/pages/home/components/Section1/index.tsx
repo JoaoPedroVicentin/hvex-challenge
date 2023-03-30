@@ -5,6 +5,8 @@ import { Container, InfosColumn, ImageColumn } from './styles'
 
 import 'aos/dist/aos.css'
 
+// Section - Tenha Informações em tempo real das condições dos ativos e com o monitoramento inteligente
+
 export function Section1() {
   return (
     <Container>

@@ -13,11 +13,15 @@ import {
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 
+// Section - Monitoramento inteligente de transformadores de distribuição
+
 export function Section4() {
+  // Iniciando aos para ativar as animações
   useEffect(() => {
     Aos.init({ duration: 500, once: true, delay: 50 })
   }, [])
 
+  // Armazenando lista da section em um array
   const datas = [
     {
       id: 1,
@@ -85,6 +89,7 @@ export function Section4() {
             de dados como:
           </h4>
           <InfosOmni>
+            {/* Listando os dados da lista da section */}
             {datas.map((data) => {
               return (
                 <div

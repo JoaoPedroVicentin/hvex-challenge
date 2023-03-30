@@ -70,6 +70,7 @@ export const SocialMedia = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+
   div {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -126,11 +127,10 @@ export const FooterBottom = styled.div`
   grid-template-columns: 2fr 0 1fr 1fr;
   gap: 5rem;
 
-  padding-top: 2rem;
+  color: ${(props) => props.theme.whiteLight};
 
   border-top: 1px solid ${(props) => props.theme.whiteLight};
-
-  color: ${(props) => props.theme.whiteLight};
+  padding-top: 2rem;
 
   span {
     @media (max-width: 515px) {

@@ -1,5 +1,7 @@
 import { createGlobalStyle } from 'styled-components'
 
+// Configurando estilos globais da aplicação
+
 export const GlobalStyle = createGlobalStyle`
     *{
         margin: 0;

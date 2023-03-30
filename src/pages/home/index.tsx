@@ -11,13 +11,17 @@ import { Section5 } from './components/Section5'
 import { Section6 } from './components/Section6'
 import { Section7 } from './components/Section7'
 
+// Page - Home
+
 export default function Home() {
   return (
     <>
+      {/* Configurando SEO da página */}
       <NextSeo
         title="HVEX | Omni Trafo"
         description="Tenha Informações em tempo real das condições dos ativos e com o monitoramento inteligente"
       />
+      {/* Renderizando componentes da page Home */}
       <HeaderSection />
       <Section1 />
       <Section2 />

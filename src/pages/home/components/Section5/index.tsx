@@ -9,11 +9,15 @@ import CheckIcon from '@mui/icons-material/Check'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 
+// Section - Desenvolvido para melhorar a performance dos ativos de distribuição
+
 export function Section5() {
+  // Iniciando aos para ativar as animações
   useEffect(() => {
     Aos.init({ duration: 500, once: true, delay: 150 })
   }, [])
 
+  // Armazenando lista da section em um array
   const datas = [
     {
       id: 1,
@@ -54,6 +58,7 @@ export function Section5() {
           </h2>
 
           <ul>
+            {/* Listando os dados da lista da section */}
             {datas.map((data) => {
               return (
                 <li key={data.id}>

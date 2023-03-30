@@ -29,6 +29,7 @@ export const HeaderContainer = styled.header`
     ul {
       display: flex;
       gap: 3rem;
+
       list-style: none;
 
       @media (max-width: 1024px) {
@@ -95,12 +96,15 @@ export const DropdownMenuTrigger = styled(DropdownMenu.Trigger)`
 
 export const IconButton = styled.button`
   width: 3rem;
+
+  background: none;
+  color: ${(props) => props.theme.whiteLight};
+
   display: none;
   align-items: center;
   justify-content: center;
-  background: none;
+
   border: none;
-  color: ${(props) => props.theme.whiteLight};
 
   @media (max-width: 768px) {
     display: flex;
@@ -114,14 +118,13 @@ export const DropdownMenuContent = styled(DropdownMenu.Content)`
 
   display: none;
   flex-direction: column;
-
   justify-content: center;
-  gap: 2rem;
+  gap: 3rem;
 
   z-index: 10;
 
   margin-top: 1.55rem;
-  padding: 1.25rem 2.5rem 2rem;
+  padding: 2rem 2.5rem 2rem;
 
   border: 1px solid ${(props) => props.theme.grayDark};
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -150,6 +153,11 @@ export const DropdownMenuContent = styled(DropdownMenu.Content)`
   }
 
   @media (max-width: 445px) {
-    padding: 1.25rem 1rem 2rem;
+    padding: 2rem 1rem 2rem;
   }
+`
+export const DropdownMenuItem = styled(DropdownMenu.Item)`
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `
