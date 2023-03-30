@@ -25,7 +25,7 @@ export function Section7() {
       question:
         'O omni trafo pode ser utilizado como um medidor de qualidade de energia (qualimetro)?',
       response:
-        'Não, nesse caso o caso recomendamos a utilização de um modelo específico.',
+        'Não, nesse caso recomendamos a utilização de um modelo específico.',
     },
     {
       id: 3,
