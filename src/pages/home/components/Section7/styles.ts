@@ -51,7 +51,7 @@ const slideUp = keyframes`
   `
 
 export const Arrow = styled(KeyboardArrowDownIcon)`
-  transition: transform 300ms cubic-bezier(0.87, 0, 0.13, 1);
+  transition: 300ms cubic-bezier(0.87, 0, 0.13, 1);
 
   @media (max-width: 445px) {
     margin: 1rem 0;
