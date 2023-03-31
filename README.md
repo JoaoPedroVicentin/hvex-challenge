@@ -6,8 +6,8 @@
 <br/>
 
 <div align="center">
-    <img src=".\src\assets\banner-hvex.png" width="100%" />
-    <img src=".\src\assets\hvex-challenge-gif.gif" width="100%" />
+    <img src="https://raw.githubusercontent.com/JoaoPedroVicentin/h_v_e_x-challenge/main/src/assets/banner-hvex.png" width="100%" />
+    <img src="https://raw.githubusercontent.com/JoaoPedroVicentin/h_v_e_x-challenge/main/src/assets/hvex-challenge-gif.gif" width="100%" />
 </div>
 
 <br/>
