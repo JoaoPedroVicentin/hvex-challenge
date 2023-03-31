@@ -32,49 +32,45 @@
 <table width='100%'>
     <tr>
         <td><strong>Código</strong></td>
-        <td>React</td>
-        <td>Next</td>
-        <td>Typescript</td>
-        <td>ESLint</td>
-    </tr>
-    <tr>
         <td><strong>Estilização</strong></td>
-        <td>Styled components</td>
-        <td>Material UI</td>
-        <td>Radix UI</td>
-        <td></td>
+        <td><strong>Teste</strong></td>
+        <td><strong>Animações</strong></td>
+        <td><strong>Execução</strong></td>
+        <td><strong>SEO</strong></td>
+        <td><strong>Deploy</strong></td>
     </tr>
     <tr>
-        <td><strong>Teste</strong></td>
+        <td>React</td>
+        <td>Styled components</td>
         <td>Jest</td>
+        <td>AOS</td>
+        <td>Docker</td>
+        <td>NextSeo</td>
+        <td>Vercel</td>
+    </tr>
+    <tr>
+        <td>Next</td>
+        <td>Material UI</td>
         <td>Testing library</td>
         <td></td>
         <td></td>
-    </tr>
-    <tr>
-        <td><strong>Animações</strong></td>
-        <td>AOS</td>
-        <td></td>
         <td></td>
         <td></td>
     </tr>
     <tr>
-        <td><strong>Execução</strong></td>
-        <td>Docker</td>
+        <td>Typescript</td>
+        <td>Radix UI</td>
+        <td></td>
+        <td></td>
         <td></td>
         <td></td>
         <td></td>
     </tr>
     <tr>
-        <td><strong>SEO</strong></td>
-        <td>NextSeo</td>
+        <td>ESLint</td>
         <td></td>
         <td></td>
         <td></td>
-    </tr>
-    <tr>
-        <td><strong>Deploy</strong></td>
-        <td>Vercel</td>
         <td></td>
         <td></td>
         <td></td>
