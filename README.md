@@ -82,12 +82,12 @@
 <h2>🚨 Lighthouse</h2>
 
 <h3>Versão desktop</h3>
-<img src=".\src\assets\lighthouse-desktop.png" width="100%" />
+<img src="https://raw.githubusercontent.com/JoaoPedroVicentin/h_v_e_x-challenge/main/src/assets/lighthouse-desktop.png" width="100%" />
 
 <br/>
 
 <h3>Versão mobile</h3>
-<img src=".\src\assets\lighthouse-mobile.png" width="100%" />
+<img src="https://raw.githubusercontent.com/JoaoPedroVicentin/h_v_e_x-challenge/main/src/assets/lighthouse-mobile.png" width="100%" />
 <br>
 
 <h2>💻 Rodando o projeto</h2>
